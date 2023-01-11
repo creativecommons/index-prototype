@@ -1,0 +1,75 @@
+/* 
+This is a prototype file for Vocabulary, 
+that may be later ported into Vocabulary 
+proper.
+*/
+
+@import 'normalize.css';
+
+/* utilities */
+.skip-to-content {
+    margin: -1000px;
+}
+
+.skip-to-content:focus {
+    margin: 0;  
+}
+
+/* typography */
+
+/* still questionable as a rule */
+h2, h3 {
+    text-transform: uppercase;
+}
+
+/* temp */
+.explore-panel {
+    display: none;
+}
+
+/* ************************* */f
+
+.data-points ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.data-points .data-point {
+    display: flex;
+    flex-direction: column;
+}
+
+.data-points .data-point .stat {
+    order: 3;
+}
+
+.topic-summary {
+    display: grid;
+    grid-template:
+        "title graphic graphic"
+        "description graphic graphic"
+        "button graphic graphic";
+}
+
+.topic-summary h2 {
+    grid-area: title;
+}
+
+.topic-summary img {
+    grid-area: graphic;
+
+    background: black;
+    width: 100%;
+}
+
+.topic-summary p {
+    grid-area: description;
+}
+
+.topic-summary a {
+    grid-area: button;
+}
