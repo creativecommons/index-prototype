@@ -27,7 +27,7 @@ h2, h3 {
     display: none;
 }
 
-/* ************************* */f
+/* ************************* */
 
 .data-points ul {
     display: grid;
@@ -35,7 +35,7 @@ h2, h3 {
     margin: 0;
     padding: 0;
 
-    list-style: none;
+    list-style-type: none;
 }
 
 .data-points .data-point {
