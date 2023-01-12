@@ -18,6 +18,10 @@ proper.
 
 /* typography */
 
+body {
+    font-family: Arial;  
+}
+
 /* still questionable as a rule */
 h2, h3 {
     text-transform: uppercase;

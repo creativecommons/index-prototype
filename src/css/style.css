@@ -1,9 +1,6 @@
+/* more bespoke bits here */
 
 @import 'vocabulary/library-vars.css';
-
-body {
-  font-family: Arial;  
-}
 
 .home-narrative > article:nth-of-type(3) {
   background:var(--vocabulary-brand-color-tomato);
