@@ -4,7 +4,7 @@ that may be later ported into Vocabulary
 proper.
 */
 
-@import 'normalize.css';
+@import 'vendor/normalize.css';
 
 /* utilities */
 .skip-to-content {
