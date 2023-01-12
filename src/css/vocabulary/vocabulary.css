@@ -5,6 +5,7 @@ proper.
 */
 
 @import 'vendor/normalize.css';
+@import 'library-vars.css';
 
 /* utilities */
 .skip-to-content {

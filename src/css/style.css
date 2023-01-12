@@ -1,3 +1,18 @@
+
+@import 'vocabulary/library-vars.css';
+
 body {
   font-family: Arial;  
+}
+
+.home-narrative > article:nth-of-type(3) {
+  background:var(--vocabulary-brand-color-tomato);
+}
+
+.home-narrative > article:nth-of-type(3) footer {
+  background: white;
+}
+
+.home-narrative > article:nth-of-type(4) {
+  background:var(--vocabulary-brand-color-gold);
 }
