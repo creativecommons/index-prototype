@@ -9,7 +9,11 @@ proper.
 
 /* utilities */
 .skip-to-content {
+    position: absolute;
+    top: 0;
+    left: 0;
     margin: -1000px;
+    
 }
 
 .skip-to-content:focus {
@@ -27,9 +31,120 @@ h2, h3 {
     text-transform: uppercase;
 }
 
-/* temp */
-.explore-panel {
+/* ************************* */
+
+header {
+    position: relative;
+    padding: 0 var(--vocabulary-page-edges-space);
+}
+
+.masthead {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+    width: 100%;
+    padding-top: 3%;
+}
+
+.masthead h1 {
+    margin: 0;
+}
+
+.masthead .identity-logo {
+    display: inline-block;
+    text-indent: -1000px;
+    vertical-align: bottom;
+    height: 50px;
+    width: 191px;
+    
+    
+    /* allows for color manipulation of svg */
+    background-color: black;
+    -webkit-mask-image: url('../../svg/cc/logos/cc/logomark.svg');
+    mask-image: url('../../svg/cc/logos/cc/logomark.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    cursor: pointer;
+
+    /* standard pattern for setting logo in lieu of background color manipulation */
+    /* background: url('../../svg/cc/logos/cc/logomark.svg') left top no-repeat; */
+}
+
+/* TODO: needs focus outline to be fixed */
+.masthead .identity-logo:focus {
+    border: 2px solid purple;
+}
+
+.masthead .primary-menu {
+    /* margin-top: 45px; */
+    /* vertical-align: bottom; */
+}
+
+.masthead .primary-menu ul {
+    display: flex;
+    justify-content: space-around; 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.masthead .primary-menu ul li {
+    margin-top: 5px;
+    margin-left: 20px;
+    
+}
+
+.masthead .primary-menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+button.expand-menu {
     display: none;
+}
+
+.ancilliary-menu {
+    position: absolute;
+    top: 0;
+    right: var(--vocabulary-page-edges-space);
+}
+
+.ancilliary-menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.ancilliary-menu ul li {
+    margin-left: 10px;
+}
+.ancilliary-menu ul li a {
+    /* generalize this */
+    display: inline-block;
+}
+
+.ancilliary-menu ul li a, 
+.ancilliary-menu ul li button {
+    margin-top: 10px;
+}
+
+.ancilliary-menu button.explore {
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+    background: black;
+    color: white;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 /* ************************* */
@@ -77,4 +192,31 @@ h2, h3 {
 
 .topic-summary a {
     grid-area: button;
+}
+
+
+@media (max-width: 705px) {
+    .primary-menu {
+        display: none;
+    }
+    .ancilliary-menu {
+        display: none;
+    }
+
+    button.expand-menu {
+        display: inline-block;
+    }
+
+}
+
+
+
+
+/* temp */
+.explore-panel {
+    display: none;
+}
+
+article, footer, article.topic-summary {
+    display: none;
 }

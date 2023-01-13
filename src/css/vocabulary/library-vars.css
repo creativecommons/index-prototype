@@ -1,6 +1,10 @@
 /* library vars */
 
 :root {
+    /* brand colors */
     --vocabulary-brand-color-gold: #FBD43C;
     --vocabulary-brand-color-tomato: #C74200;
+
+    /* whitespace */
+    --vocabulary-page-edges-space: 5%;
 }
