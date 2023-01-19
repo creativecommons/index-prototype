@@ -1,10 +1,24 @@
 /* library vars */
 
+/* brand typsetting */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-display: swap;
+    src:  url('../../fonts/vocabulary/RobotoCondensed-Regular.woff2') format('woff2'),
+            url('../../fonts/vocabulary/RobotoCondensed-Regular.woff') format('woff'),
+            url('../../fonts/vocabulary/RobotoCondensed-Regular.otf') format('opentype'),
+}
+
 :root {
     /* brand colors */
     --vocabulary-brand-color-gold: #FBD43C;
     --vocabulary-brand-color-tomato: #C74200;
 
+    /* brand typsetting */
+    --vocabulary-brand-typeset-nav-family: "Roboto Condensed", sans-serif;
+    --vocabulary-brand-typeset-nav-weight: bold;
+    --vocabulary-brand-typeset-nav-color: #767676;
     /* whitespace */
     --vocabulary-page-edges-space: 5%;
+
 }

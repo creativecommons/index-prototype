@@ -80,6 +80,7 @@ header {
 .masthead .primary-menu {
     /* margin-top: 45px; */
     /* vertical-align: bottom; */
+    
 }
 
 .masthead .primary-menu ul {
@@ -101,7 +102,9 @@ header {
 .masthead .primary-menu ul li a {
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    font-family: var(--vocabulary-brand-typeset-nav-family);
+    font-weight: var(--vocabulary-brand-typeset-nav-weight);
+    color: var(--vocabulary-brand-typeset-nav-color);
 }
 
 button.expand-menu {
