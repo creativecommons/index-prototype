@@ -23,7 +23,10 @@ proper.
 /* typography */
 
 body {
-    font-family: Arial;  
+    /* font-family: Arial;   */
+    font-weight: 400;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* still questionable as a rule */
@@ -48,7 +51,8 @@ header {
     position: relative;
 
     width: 100%;
-    padding-top: 3%;
+    /* padding-top: 3%; */
+    padding-top: 40px;
     margin: 0 var(--vocabulary-page-edges-space);
 }
 
@@ -74,6 +78,11 @@ header {
 
     /* standard pattern for setting logo in lieu of background color manipulation */
     /* background: url('../../svg/cc/logos/cc/logomark.svg') left top no-repeat; */
+}
+
+.masthead .identity-logo:hover {
+    background-color: var(--vocabulary-neutral-color-dark-gray);
+    
 }
 
 /* TODO: needs focus outline to be fixed */
@@ -193,11 +202,88 @@ button.expand-menu {
 
 .explore-panel {
     order: -1;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
+    padding: 40px var(--vocabulary-page-edges-space) 60px var(--vocabulary-page-edges-space);
 
     background: black;
     color: white;
+}
 
+.explore-panel aside {
+    margin-right: 20px;
+}
+
+.explore-panel aside .identity-logo {
+    display: inline-block;
+    text-indent: -1000px;
+    vertical-align: bottom;
+    height: 50px;
+    width: 191px;
+    
+    
+    /* allows for color manipulation of svg */
+    background-color: white;
+    -webkit-mask-image: url('../../svg/cc/logos/cc/logomark.svg');
+    mask-image: url('../../svg/cc/logos/cc/logomark.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    cursor: pointer;
+
+    /* standard pattern for setting logo in lieu of background color manipulation */
+    /* background: url('../../svg/cc/logos/cc/logomark.svg') left top no-repeat; */
+
+}
+
+.explore-panel aside h2 {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+
+}
+
+.explore-panel aside p {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.explore-panel .explore-menu {
+    width: 100%;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.explore-panel .explore-menu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+}
+
+.explore-panel nav ul li a {
+    display: block;
+
+    color: var(--vocabulary-brand-color-turquoise);
+    text-decoration: none;
+    font-weight: 700;
+    /* margin-bottom: .8em; */
+
+
+}
+
+.explore-panel nav ul li p {
+    font-weight: inherit;
+    line-height: 1.5;
 
 }
 
@@ -248,19 +334,47 @@ button.expand-menu {
     grid-area: button;
 }
 
-
 @media (max-width: 705px) {
+
+    .masthead {
+        padding-top: 60px;
+    }
     .primary-menu {
         display: none;
     }
     .ancilliary-menu {
-        display: none;
+        /* display: none; */
     }
 
     button.expand-menu {
         display: inline-block;
     }
 
+}
+
+@media (max-width: 680px) {
+
+    .explore-panel {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 580px) {
+    .explore-panel .explore-menu ul {
+        grid-template-columns: 1fr 1fr;
+        /* display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; */
+    }
+}
+
+@media (max-width:400px) {
+
+    .explore-panel .explore-menu ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -271,13 +385,13 @@ button.expand-menu {
 
 
 /* temp */
-.explore-panelgit {
+.explore-panel {
     display: none;
     
 }
 
 .explore-panel.expand {
-    display: initial;
+    display: inherit;
     transition: display 2s ease-in-out;
 }
 

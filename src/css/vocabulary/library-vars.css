@@ -57,11 +57,13 @@
     /* brand colors */
     --vocabulary-brand-color-gold: #FBD43C;
     --vocabulary-brand-color-tomato: #C74200;
+    --vocabulary-brand-color-turquoise: #05b5da;
 
     --vocabulary-brand-color-soft-tomato: #FEEDE9;
     --vocabulary-brand-color-dark-tomato: #903101; 
 
     --vocabulary-neutral-color-lighter-gray: #F5F5F5;
+    --vocabulary-neutral-color-dark-gray: #767676;
 
     /* brand typsetting */
     --vocabulary-brand-typeset-nav-family: "Roboto Condensed";
