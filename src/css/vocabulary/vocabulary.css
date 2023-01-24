@@ -34,8 +34,10 @@ h2, h3 {
 /* ************************* */
 
 header {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
-    padding: 0 var(--vocabulary-page-edges-space);
+    /* padding: 0 var(--vocabulary-page-edges-space); */
 }
 
 .masthead {
@@ -43,9 +45,11 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: baseline;
+    position: relative;
 
     width: 100%;
     padding-top: 3%;
+    margin: 0 var(--vocabulary-page-edges-space);
 }
 
 .masthead h1 {
@@ -104,7 +108,13 @@ header {
     text-transform: uppercase;
     font-family: var(--vocabulary-brand-typeset-nav-family);
     font-weight: var(--vocabulary-brand-typeset-nav-weight);
+    font-size: 1.1em;
+    letter-spacing: 0.02em;
     color: var(--vocabulary-brand-typeset-nav-color);
+}
+
+.masthead .primary-menu ul li a:hover {
+    color: black;
 }
 
 button.expand-menu {
@@ -114,7 +124,13 @@ button.expand-menu {
 .ancilliary-menu {
     position: absolute;
     top: 0;
-    right: var(--vocabulary-page-edges-space);
+    /* right: var(--vocabulary-page-edges-space); */
+    right: 0;
+
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 600; 
+    font-size: .8em;
 }
 
 .ancilliary-menu ul {
@@ -138,16 +154,51 @@ button.expand-menu {
     margin-top: 10px;
 }
 
+.ancilliary-menu ul li button:hover {
+    cursor: pointer;
+}
+
+.ancilliary-menu button.locale {
+    padding: 4px 10px;
+
+
+    background:  var(--vocabulary-neutral-color-lighter-gray);
+    border: none;
+}
+
+.ancilliary-menu a.donate {
+    display: inline-block;
+    padding: 4px 10px;
+
+    text-decoration: none;
+    background: var(--vocabulary-brand-color-soft-tomato);
+    color: var(--vocabulary-brand-color-dark-tomato);
+    border-radius: 3px;
+
+}
+
 .ancilliary-menu button.explore {
     margin-top: 0;
-    padding-top: 10px;
+    padding-top: 14px;
     padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 
     background: black;
     color: white;
     border: none;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+}
+
+.explore-panel {
+    order: -1;
+    width: 100%;
+
+    background: black;
+    color: white;
+
+
 }
 
 /* ************************* */
@@ -215,10 +266,21 @@ button.expand-menu {
 
 
 
+
+
+
+
 /* temp */
 .explore-panel {
     display: none;
+    
 }
+
+.explore-panel.expand {
+    display: initial;
+    transition: display 2s ease-in-out;
+}
+
 
 article, footer, article.topic-summary {
     display: none;

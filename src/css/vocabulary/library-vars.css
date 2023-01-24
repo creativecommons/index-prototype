@@ -2,22 +2,72 @@
 
 /* brand typsetting */
 @font-face {
-    font-family: 'Roboto Condensed';
+    font-family:"Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
     font-display: swap;
     src:  url('../../fonts/vocabulary/RobotoCondensed-Regular.woff2') format('woff2'),
-            url('../../fonts/vocabulary/RobotoCondensed-Regular.woff') format('woff'),
-            url('../../fonts/vocabulary/RobotoCondensed-Regular.otf') format('opentype'),
+        url('../../fonts/vocabulary/RobotoCondensed-Regular.woff') format('woff'),
+        url('../../fonts/vocabulary/RobotoCondensed-Regular.otf') format('opentype');
 }
+    
+@font-face {
+    font-family:"Roboto Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src:  url('../../fonts/vocabulary/RobotoCondensed-Bold.woff2') format('woff2'),
+        url('../../fonts/vocabulary/RobotoCondensed-Bold.woff') format('woff'),
+        url('../../fonts/vocabulary/RobotoCondensed-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../../fonts/vocabulary/SourceSansPro-Regular.woff2) format("woff2"),
+        url(../../fonts/vocabulary/SourceSansPro-Regular.woff) format("woff"),
+        url(../../fonts/vocabulary/SourceSansPro-Regular.otf) format("opentype"); 
+ }
+    
+@font-face {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../../fonts/vocabulary/SourceSansPro-SemiBold.woff2) format("woff2"),
+        url(../../fonts/vocabulary/SourceSansPro-SemiBold.woff) format("woff"),
+        url(../../fonts/vocabulary/SourceSansPro-SemiBold.otf) format("opentype");       
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../../fonts/vocabulary/SourceSansPro-Bold.woff2) format("woff2"),
+        url(../../fonts/vocabulary/SourceSansPro-Bold.woff) format("woff"),
+            url(../../vocabulary/fonts/SourceSansPro-Bold.otf) format("opentype");
+}
+
+
 
 :root {
     /* brand colors */
     --vocabulary-brand-color-gold: #FBD43C;
     --vocabulary-brand-color-tomato: #C74200;
 
+    --vocabulary-brand-color-soft-tomato: #FEEDE9;
+    --vocabulary-brand-color-dark-tomato: #903101; 
+
+    --vocabulary-neutral-color-lighter-gray: #F5F5F5;
+
     /* brand typsetting */
-    --vocabulary-brand-typeset-nav-family: "Roboto Condensed", sans-serif;
+    --vocabulary-brand-typeset-nav-family: "Roboto Condensed";
     --vocabulary-brand-typeset-nav-weight: bold;
     --vocabulary-brand-typeset-nav-color: #767676;
+
     /* whitespace */
     --vocabulary-page-edges-space: 5%;
 
