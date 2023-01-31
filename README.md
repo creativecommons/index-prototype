@@ -74,9 +74,10 @@ the [Apache License, Version 2.0][apache20].
 
 #### Source Sans Pro
 
-[Source Sans Pro] by Paul D. Hunt is licensed under the [Open Font
+[Source Sans Pro][sourcesanspro] by Paul D. Hunt is licensed under the [Open Font
 License][oflsil].
 
+[sourcesanspro]: https://fonts.adobe.com/fonts/source-sans
 [oflsil]: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
 
 
