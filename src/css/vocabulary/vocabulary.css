@@ -287,6 +287,68 @@ button.expand-menu {
 
 }
 
+
+
+
+body > footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "logo nav nav nav"
+    "contact subscribe subscribe donate"
+    "contact copyright copyright donate";
+    gap: 40px;
+    padding: 20px var(--vocabulary-page-edges-space);
+    padding-bottom: 40px;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400; 
+    color: white;
+    background: black;
+}
+
+body > footer .footer-menu {
+    grid-area: nav;
+    
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+body > footer .footer-menu ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    
+}
+
+body > footer .footer-menu ul li a {
+    text-decoration: none;
+    color: var( --vocabulary-brand-color-turquoise);
+
+}
+
+
+body > footer .contact {
+    grid-area: contact;
+}
+
+
+body > footer .subscribe {
+    grid-area: subscribe;
+}
+
+body > footer .copyright {
+    grid-area: copyright;
+}
+
+
+
+
+
 /* ************************* */
 
 .data-points ul {
