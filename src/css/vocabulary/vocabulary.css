@@ -296,7 +296,7 @@ body > footer {
     grid-template-areas: 
     "logo nav nav nav"
     "contact subscribe subscribe donate"
-    "contact copyright copyright donate";
+    "contact license license donate";
     gap: 40px;
     padding: 20px var(--vocabulary-page-edges-space);
     padding-bottom: 40px;
@@ -306,6 +306,31 @@ body > footer {
     font-weight: 400; 
     color: white;
     background: black;
+}
+
+body > footer .identity-logo {
+    grid-area: logo;
+    display: inline-block;
+    text-indent: -1000px;
+    vertical-align: bottom;
+    height: 50px;
+    width: 191px;
+    
+    
+    /* allows for color manipulation of svg */
+    background-color: white;
+    -webkit-mask-image: url('../../svg/cc/logos/cc/logomark.svg');
+    mask-image: url('../../svg/cc/logos/cc/logomark.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    cursor: pointer;
+
+    /* standard pattern for setting logo in lieu of background color manipulation */
+    /* background: url('../../svg/cc/logos/cc/logomark.svg') left top no-repeat; */
+}
+
+body > footer .identity-logo:hover {
+    background-color: var(--vocabulary-brand-color-turquoise);
 }
 
 body > footer .footer-menu {
@@ -322,18 +347,25 @@ body > footer .footer-menu ul {
     padding: 0;
 
     list-style: none;
-    
 }
 
 body > footer .footer-menu ul li a {
     text-decoration: none;
-    color: var( --vocabulary-brand-color-turquoise);
+    color: var(--vocabulary-brand-color-turquoise);
 
 }
 
-
 body > footer .contact {
     grid-area: contact;
+}
+
+body > footer .contact .social-menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
 }
 
 
@@ -341,8 +373,21 @@ body > footer .subscribe {
     grid-area: subscribe;
 }
 
-body > footer .copyright {
-    grid-area: copyright;
+
+body > footer .donate {
+    grid-area: donate;
+}
+
+body > footer .donate button.donate {
+    padding: 16px 24px;
+
+    border: none;
+    border-radius: 4px;
+    background: var(--vocabulary-brand-color-gold);
+}
+
+body > footer .license {
+    grid-area: license;
 }
 
 
