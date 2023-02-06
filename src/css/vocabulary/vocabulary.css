@@ -489,9 +489,68 @@ body > footer .license {
 
 
 
-
-
 /* temp */
+
+
+/* setup svg sprite sheet capabilities */
+:root {
+    /* set default icon sprite */
+    --icon-sprite: url('../../svg/cc/icons/cc-icons.svg#cc-logo');
+    --icon-sprite-color: black;
+
+    /* sprite names */
+    --cc-logo: url('../../svg/cc/icons/cc-icons.svg#cc-logo');
+    --cc-heart: url('../../svg/cc/icons/cc-icons.svg#cc-heart');
+    --cc-heart-filled: url('../../svg/cc/icons/cc-icons.svg#cc-heart-filled');
+}
+
+/* establish svg sprite icon defaults */
+.icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: var(--icon-sprite-color);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat; 
+
+    -webkit-mask-image: var(--icon-sprite);
+    mask-image: var(--icon-sprite);
+}
+
+/* customize a specific sprite via matching class on span */
+.icon.cc-heart, .icon-attach.cc-heart:before {
+    --icon-sprite: var(--cc-heart);
+    /* --icon-sprite-color: white; */
+}
+
+.icon.cc-heart-filled, .icon-attach.cc-heart-filled:before {
+    --icon-sprite: var(--cc-heart-filled);
+    /* --icon-sprite-color: white; */
+}
+
+
+/* attach an icon to an existing element with a :before */
+.icon-attach:before {
+    display: inline-block;
+    content: '';
+    width: 30px;
+    height: 30px;
+
+    background-color: var(--icon-sprite-color);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat; 
+    -webkit-mask-image: var(--icon-sprite);
+    mask-image: var(--icon-sprite);
+  
+    --icon-sprite: var(--cc-logo);
+}
+
+/* button.donate:before {
+    --icon-sprite: var(--cc-heart-filled);
+    --icon-sprite-color: white;
+} */
+
+
 .explore-panel {
     display: none;
     
