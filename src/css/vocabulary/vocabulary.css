@@ -168,6 +168,8 @@ button.expand-menu {
 }
 
 .ancilliary-menu button.locale {
+    display: inline-flex;
+    align-items: center;
     padding: 4px 10px;
 
 
@@ -176,7 +178,8 @@ button.expand-menu {
 }
 
 .ancilliary-menu a.donate {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     padding: 4px 10px;
 
     text-decoration: none;
@@ -502,10 +505,14 @@ body > footer .license {
     --icon-sprite-color: black;
     --icon-sprite-size: 1em;
 
-    /* sprite names */
+    /* cc sprite names */
     --cc-logo: url('../../svg/cc/icons/cc-icons.svg#cc-logo');
     --cc-heart: url('../../svg/cc/icons/cc-icons.svg#cc-heart');
     --cc-heart-filled: url('../../svg/cc/icons/cc-icons.svg#cc-heart-filled');
+
+    /* font awesome sprite names */
+    --fa-globe: url('../../svg/font-awesome/icons/fa-icons.svg#fa-globe');
+    --fa-heart: url('../../svg/font-awesome/icons/fa-icons.svg#fa-heart');
 }
 
 /* establish svg sprite icon defaults */
@@ -531,12 +538,18 @@ body > footer .license {
 /* customize a specific sprite via matching class on span */
 .icon.cc-heart, .icon-attach.cc-heart:before {
     --icon-sprite: var(--cc-heart);
-    /* --icon-sprite-color: white; */
 }
 
 .icon.cc-heart-filled, .icon-attach.cc-heart-filled:before {
     --icon-sprite: var(--cc-heart-filled);
-    /* --icon-sprite-color: white; */
+}
+
+.icon.fa-globe, .icon-attach.fa-globe:before {
+    --icon-sprite: var(--fa-globe);
+}
+
+.icon.fa-heart, .icon-attach.fa-heart:before {
+    --icon-sprite: var(--fa-heart);
 }
 
 
@@ -596,6 +609,26 @@ footer a.donate.icon-attach:before {
 
     margin-right: .3em;
 }
+
+header button.locale.icon-attach:before {
+    --icon-sprite: var(--fa-globe);
+    --icon-sprite-size: .8em;
+
+    margin-right: .8em;
+
+    opacity: .3;
+}
+
+header a.donate.icon-attach:before {
+    --icon-sprite: var(--fa-heart);
+    --icon-sprite-color: var(--vocabulary-brand-color-dark-tomato);   
+     --icon-sprite-size: .8em;
+
+    margin-right: .8em;
+}
+
+
+
 
 
 
