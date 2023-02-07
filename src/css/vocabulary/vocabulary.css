@@ -378,11 +378,14 @@ body > footer .donate {
     grid-area: donate;
 }
 
-body > footer .donate button.donate {
-    padding: 16px 24px;
-
+body > footer .donate a.donate {
+    padding: 1rem 1.5rem;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
     border: none;
     border-radius: 4px;
+    color: black;
     background: var(--vocabulary-brand-color-gold);
 }
 
@@ -497,6 +500,7 @@ body > footer .license {
     /* set default icon sprite */
     --icon-sprite: url('../../svg/cc/icons/cc-icons.svg#cc-logo');
     --icon-sprite-color: black;
+    --icon-sprite-size: 1em;
 
     /* sprite names */
     --cc-logo: url('../../svg/cc/icons/cc-icons.svg#cc-logo');
@@ -507,14 +511,21 @@ body > footer .license {
 /* establish svg sprite icon defaults */
 .icon {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    /* min-width: 30px;
+    min-height: 30px; */
+    height: 1em;
+    width: 1em;
+
+    font-size: var(--icon-sprite-size);
     background-color: var(--icon-sprite-color);
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat; 
 
     -webkit-mask-image: var(--icon-sprite);
     mask-image: var(--icon-sprite);
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
 }
 
 /* customize a specific sprite via matching class on span */
@@ -533,22 +544,59 @@ body > footer .license {
 .icon-attach:before {
     display: inline-block;
     content: '';
-    width: 30px;
-    height: 30px;
+    /* min-width: 30px; */
+    /* min-height: 30px; */
+    height: 1em;
+    width: 1em;
 
+    font-size: var(--icon-sprite-size);
     background-color: var(--icon-sprite-color);
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat; 
     -webkit-mask-image: var(--icon-sprite);
     mask-image: var(--icon-sprite);
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
   
     --icon-sprite: var(--cc-logo);
 }
 
-/* button.donate:before {
+/* 
+may want to later abstract this to a genera before on a 
+series of selectors so that the :before: gets and .icon
+in most cases, unless you choose to disable it. That way
+some items have icons, and some don't and it isn't an 
+arbitrary choice. 
+*/
+
+
+footer a.donate {
+    display: inline-flex;
+    align-items: center;
+
+    font-size: 1.5em;
+    line-height: 1em;
+    text-transform: uppercase;
+
+}
+
+footer a.donate:hover {
+cursor: pointer;
+
+background-color: rgb(248, 204, 44);
+
+}
+
+/* set the icon settings */
+footer a.donate:before {
     --icon-sprite: var(--cc-heart-filled);
-    --icon-sprite-color: white;
-} */
+    --icon-sprite-color: black;
+    --icon-sprite-size: 1.2em;
+
+    margin-right: .3em;
+}
+
 
 
 .explore-panel {
