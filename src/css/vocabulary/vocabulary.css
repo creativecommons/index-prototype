@@ -582,15 +582,15 @@ footer a.donate {
 }
 
 footer a.donate:hover {
-cursor: pointer;
+    cursor: pointer;
 
-background-color: rgb(248, 204, 44);
+    background-color: rgb(248, 204, 44);
 
 }
 
 /* set the icon settings */
-footer a.donate:before {
-    --icon-sprite: var(--cc-heart-filled);
+footer a.donate.icon-attach:before {
+    /* --icon-sprite: var(--cc-heart-filled); */
     --icon-sprite-color: black;
     --icon-sprite-size: 1.2em;
 
