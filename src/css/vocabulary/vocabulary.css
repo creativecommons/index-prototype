@@ -311,6 +311,14 @@ body > footer {
     background: black;
 }
 
+body > footer a:link {
+    color: var(--vocabulary-brand-color-turquoise);
+}
+
+body > footer p {
+    line-height: 1.5;
+}
+
 body > footer .identity-logo {
     grid-area: logo;
     display: inline-block;
@@ -371,6 +379,10 @@ body > footer .contact .social-menu ul {
 
 }
 
+body > footer .contact .social-menu ul li {
+    margin-right: 1.5em;
+}
+
 
 body > footer .subscribe {
     grid-area: subscribe;
@@ -395,6 +407,11 @@ body > footer .donate a.donate {
 body > footer .license {
     grid-area: license;
 }
+
+/* body > footer .license p {
+    line-height: 1.5;
+
+} */
 
 
 
@@ -513,6 +530,12 @@ body > footer .license {
     /* font awesome sprite names */
     --fa-globe: url('../../svg/font-awesome/icons/fa-icons.svg#fa-globe');
     --fa-heart: url('../../svg/font-awesome/icons/fa-icons.svg#fa-heart');
+
+    --fa-instagram: url('../../svg/font-awesome/icons/fa-icons.svg#fa-instagram');
+    --fa-twitter: url('../../svg/font-awesome/icons/fa-icons.svg#fa-twitter');
+    --fa-facebook: url('../../svg/font-awesome/icons/fa-icons.svg#fa-facebook');
+    --fa-linkedin: url('../../svg/font-awesome/icons/fa-icons.svg#fa-linkedin');
+    --fa-mastodon: url('../../svg/font-awesome/icons/fa-icons.svg#fa-mastodon');
 }
 
 /* establish svg sprite icon defaults */
@@ -552,11 +575,54 @@ body > footer .license {
     --icon-sprite: var(--fa-heart);
 }
 
+.icon-replace.fa-instagram {
+    --icon-sprite: var(--fa-instagram);
+}
+
+.icon-replace.fa-twitter {
+    --icon-sprite: var(--fa-twitter);
+}
+
+.icon-replace.fa-facebook {
+    --icon-sprite: var(--fa-facebook);
+}
+
+.icon-replace.fa-linkedin {
+    --icon-sprite: var(--fa-linkedin);
+}
+
+.icon-replace.fa-mastodon {
+    --icon-sprite: var(--fa-mastodon);
+}
+
 
 /* attach an icon to an existing element with a :before */
 .icon-attach:before {
     display: inline-block;
     content: '';
+    /* min-width: 30px; */
+    /* min-height: 30px; */
+    height: 1em;
+    width: 1em;
+
+    font-size: var(--icon-sprite-size);
+    background-color: var(--icon-sprite-color);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat; 
+    -webkit-mask-image: var(--icon-sprite);
+    mask-image: var(--icon-sprite);
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+  
+    --icon-sprite: var(--cc-logo);
+}
+
+.icon-replace {
+    display: inline-block;
+    content: '';
+    text-indent: -1000px;
+    
     /* min-width: 30px; */
     /* min-height: 30px; */
     height: 1em;
@@ -583,6 +649,11 @@ some items have icons, and some don't and it isn't an
 arbitrary choice. 
 */
 
+
+footer nav.social-menu li a {
+    --icon-sprite-color: white;
+    --icon-sprite-size: 1.9em;
+}
 
 footer a.donate {
     display: inline-flex;
