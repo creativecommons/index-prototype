@@ -408,11 +408,17 @@ body > footer .license {
     grid-area: license;
 }
 
-/* body > footer .license p {
-    line-height: 1.5;
+body > footer .license img path {
+    fill: white;
+    /* width: 1.2em; */
+}
 
-} */
-
+body > footer .license svg {
+    display: inline;
+    width: 1.9em;
+    height: 1.9em;
+    margin-right: .3em;
+}
 
 
 
