@@ -311,12 +311,40 @@ body > footer {
     background: black;
 }
 
+body > footer h2 {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
 body > footer a:link {
     color: var(--vocabulary-brand-color-turquoise);
 }
 
 body > footer p {
     line-height: 1.5;
+}
+
+/* needs to be moved to be broader in general specificity scope */
+body > footer p a:link {
+    /* better hyperlink underline typesetting inspired by Tufte CSS */
+    --underline-color: var(--vocabulary-brand-color-turquoise);
+    --underline-background-color: black;
+
+    text-decoration: none;
+
+    /* adapted from Tufte.css -- Copyright (c) 2014 Dave Liepmann -- https://github.com/edwardtufte/tufte-css -- https://github.com/edwardtufte/tufte-css/blob/gh-pages/LICENSE */
+    background: -webkit-linear-gradient(var( --underline-color), var( --underline-color)), -webkit-linear-gradient(var( --underline-color), var( --underline-color)), -webkit-linear-gradient(currentColor, currentColor);
+    background: linear-gradient(var( --underline-color), var( --underline-color)), linear-gradient(var( --underline-color), var( --underline-color)), linear-gradient(currentColor, currentColor);
+    -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: 0.03em 0 var(--underline-background-color), -0.03em 0 var(--underline-background-color), 0 0.03em var(--underline-background-color), 0 -0.03em var(--underline-background-color), 0.06em 0 var(--underline-background-color), -0.06em 0 var(--underline-background-color), 0.09em 0 var(--underline-background-color), -0.09em 0 var(--underline-background-color), 0.12em 0 var(--underline-background-color), -0.12em 0 var(--underline-background-color), 0.15em 0 var(--underline-background-color), -0.15em 0 var(--underline-background-color);
+    background-position: 0% 93%, 100% 93%, 0% 93%;
+    /* background-position-y: 87%, 87%, 87%; */
+
 }
 
 body > footer .identity-logo {
@@ -374,6 +402,7 @@ body > footer .contact .social-menu ul {
     display: flex;
     margin: 0;
     padding: 0;
+    margin-top: 3em;
 
     list-style: none;
 
@@ -493,6 +522,10 @@ body > footer .license svg {
     .explore-panel {
         flex-wrap: wrap;
     }
+
+    body > footer {
+        display: block;
+    }
 }
 
 @media (max-width: 580px) {
@@ -501,6 +534,10 @@ body > footer .license svg {
         /* display: flex;
         flex-direction: column;
         flex-wrap: wrap; */
+    }
+
+    body > footer .footer-menu ul {
+        display: block;
     }
 }
 
