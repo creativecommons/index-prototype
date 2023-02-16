@@ -177,6 +177,15 @@ button.expand-menu {
     border: none;
 }
 
+.ancilliary-menu button.locale.icon-attach:before {
+    --icon-sprite: var(--fa-globe);
+    --icon-sprite-size: .8em;
+
+    margin-right: .8em;
+
+    opacity: .3;
+}
+
 .ancilliary-menu a.donate {
     display: inline-flex;
     align-items: center;
@@ -186,7 +195,14 @@ button.expand-menu {
     background: var(--vocabulary-brand-color-soft-tomato);
     color: var(--vocabulary-brand-color-dark-tomato);
     border-radius: 3px;
+}
 
+.ancilliary-menu a.donate.icon-attach:before {
+    --icon-sprite: var(--fa-heart);
+    --icon-sprite-color: var(--vocabulary-brand-color-dark-tomato);   
+     --icon-sprite-size: .8em;
+
+    margin-right: .8em;
 }
 
 .ancilliary-menu button.explore {
@@ -412,25 +428,49 @@ body > footer .contact .social-menu ul li {
     margin-right: 1.5em;
 }
 
+body > footer .social-menu li a {
+    --icon-sprite-color: white;
+    --icon-sprite-size: 1.9em;
+}
 
 body > footer .subscribe {
     grid-area: subscribe;
 }
-
 
 body > footer .donate {
     grid-area: donate;
 }
 
 body > footer .donate a.donate {
+    display: inline-flex;
+    align-items: center;
     padding: 1rem 1.5rem;
+
+    text-transform: uppercase;
     font-family: 'Roboto Condensed';
+    font-size: 1.5em;
+    line-height: 1em;
     font-style: normal;
     font-weight: 700;
     border: none;
     border-radius: 4px;
     color: black;
-    background: var(--vocabulary-brand-color-gold);
+    background: var(--vocabulary-brand-color-gold);  
+}
+
+body > footer .donate a.donate:hover {
+    cursor: pointer;
+
+    background-color: rgb(248, 204, 44);
+}
+
+/* set the icon settings */
+body > footer .donate a.donate.icon-attach:before {
+    /* --icon-sprite: var(--cc-heart-filled); */
+    --icon-sprite-color: black;
+    --icon-sprite-size: 1.2em;
+
+    margin-right: .3em;
 }
 
 body > footer .license {
@@ -556,195 +596,6 @@ body > footer .license svg {
 
 
 /* temp */
-
-
-/* setup svg sprite sheet capabilities */
-:root {
-    /* set default icon sprite */
-    --icon-sprite: url('../../svg/cc/icons/cc-icons.svg#cc-logo');
-    --icon-sprite-color: black;
-    --icon-sprite-size: 1em;
-
-    /* cc sprite names */
-    --cc-logo: url('../../svg/cc/icons/cc-icons.svg#cc-logo');
-    --cc-heart: url('../../svg/cc/icons/cc-icons.svg#cc-heart');
-    --cc-heart-filled: url('../../svg/cc/icons/cc-icons.svg#cc-heart-filled');
-
-    /* font awesome sprite names */
-    --fa-globe: url('../../svg/font-awesome/icons/fa-icons.svg#fa-globe');
-    --fa-heart: url('../../svg/font-awesome/icons/fa-icons.svg#fa-heart');
-
-    --fa-instagram: url('../../svg/font-awesome/icons/fa-icons.svg#fa-instagram');
-    --fa-twitter: url('../../svg/font-awesome/icons/fa-icons.svg#fa-twitter');
-    --fa-facebook: url('../../svg/font-awesome/icons/fa-icons.svg#fa-facebook');
-    --fa-linkedin: url('../../svg/font-awesome/icons/fa-icons.svg#fa-linkedin');
-    --fa-mastodon: url('../../svg/font-awesome/icons/fa-icons.svg#fa-mastodon');
-}
-
-/* establish svg sprite icon defaults */
-.icon {
-    display: inline-block;
-    /* min-width: 30px;
-    min-height: 30px; */
-    height: 1em;
-    width: 1em;
-
-    font-size: var(--icon-sprite-size);
-    background-color: var(--icon-sprite-color);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat; 
-
-    -webkit-mask-image: var(--icon-sprite);
-    mask-image: var(--icon-sprite);
-
-    -webkit-mask-size: contain;
-    mask-size: contain;
-}
-
-/* customize a specific sprite via matching class on span */
-.icon.cc-heart, .icon-attach.cc-heart:before {
-    --icon-sprite: var(--cc-heart);
-}
-
-.icon.cc-heart-filled, .icon-attach.cc-heart-filled:before {
-    --icon-sprite: var(--cc-heart-filled);
-}
-
-.icon.fa-globe, .icon-attach.fa-globe:before {
-    --icon-sprite: var(--fa-globe);
-}
-
-.icon.fa-heart, .icon-attach.fa-heart:before {
-    --icon-sprite: var(--fa-heart);
-}
-
-.icon-replace.fa-instagram {
-    --icon-sprite: var(--fa-instagram);
-}
-
-.icon-replace.fa-twitter {
-    --icon-sprite: var(--fa-twitter);
-}
-
-.icon-replace.fa-facebook {
-    --icon-sprite: var(--fa-facebook);
-}
-
-.icon-replace.fa-linkedin {
-    --icon-sprite: var(--fa-linkedin);
-}
-
-.icon-replace.fa-mastodon {
-    --icon-sprite: var(--fa-mastodon);
-}
-
-
-/* attach an icon to an existing element with a :before */
-.icon-attach:before {
-    display: inline-block;
-    content: '';
-    /* min-width: 30px; */
-    /* min-height: 30px; */
-    height: 1em;
-    width: 1em;
-
-    font-size: var(--icon-sprite-size);
-    background-color: var(--icon-sprite-color);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat; 
-    -webkit-mask-image: var(--icon-sprite);
-    mask-image: var(--icon-sprite);
-
-    -webkit-mask-size: contain;
-    mask-size: contain;
-  
-    --icon-sprite: var(--cc-logo);
-}
-
-.icon-replace {
-    display: inline-block;
-    content: '';
-    text-indent: -1000px;
-    
-    /* min-width: 30px; */
-    /* min-height: 30px; */
-    height: 1em;
-    width: 1em;
-
-    font-size: var(--icon-sprite-size);
-    background-color: var(--icon-sprite-color);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat; 
-    -webkit-mask-image: var(--icon-sprite);
-    mask-image: var(--icon-sprite);
-
-    -webkit-mask-size: contain;
-    mask-size: contain;
-  
-    --icon-sprite: var(--cc-logo);
-}
-
-/* 
-may want to later abstract this to a genera before on a 
-series of selectors so that the :before: gets and .icon
-in most cases, unless you choose to disable it. That way
-some items have icons, and some don't and it isn't an 
-arbitrary choice. 
-*/
-
-
-footer nav.social-menu li a {
-    --icon-sprite-color: white;
-    --icon-sprite-size: 1.9em;
-}
-
-footer a.donate {
-    display: inline-flex;
-    align-items: center;
-
-    font-size: 1.5em;
-    line-height: 1em;
-    text-transform: uppercase;
-
-}
-
-footer a.donate:hover {
-    cursor: pointer;
-
-    background-color: rgb(248, 204, 44);
-
-}
-
-/* set the icon settings */
-footer a.donate.icon-attach:before {
-    /* --icon-sprite: var(--cc-heart-filled); */
-    --icon-sprite-color: black;
-    --icon-sprite-size: 1.2em;
-
-    margin-right: .3em;
-}
-
-header button.locale.icon-attach:before {
-    --icon-sprite: var(--fa-globe);
-    --icon-sprite-size: .8em;
-
-    margin-right: .8em;
-
-    opacity: .3;
-}
-
-header a.donate.icon-attach:before {
-    --icon-sprite: var(--fa-heart);
-    --icon-sprite-color: var(--vocabulary-brand-color-dark-tomato);   
-     --icon-sprite-size: .8em;
-
-    margin-right: .8em;
-}
-
-
-
-
-
 
 .explore-panel {
     display: none;
