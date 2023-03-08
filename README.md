@@ -2,9 +2,8 @@
 
 ## WIP
 
-🚧 **Notice 2022.12.07**: This repository is currently unstable and in
-development. All current work is done via direct commits to the `main` branch
-and as such is not currently accepting PRs.
+🚧 **Notice 2022.03.08**: This repository is currently unstable and in
+development. Most current work is done via PR now, and minimally via direct commits to the `main` branch. It is currently accepting corrective PRs, and moving towards accepting feature/functionality PRs.
 
 
 ## Overview
