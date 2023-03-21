@@ -1,21 +1,23 @@
 # Also see:
 #   Dockerfile
 #
-# https://docs.docker.com/compose/compose-file/compose-file-v3/
+# https://docs.docker.com/compose/compose-file/compose-file-v2/
 
-version: "3.6"
+version: "2.4"
 
 services:
 
   static:
     build: .
-    command: sh -c "
+    command: /bin/bash -c "
       echo 'Starting static webserver at http://127.0.0.1:8080/'
-      && httpd-foreground
+      && /usr/local/bin/httpd-foreground
       "
     ports:
       - "8080:80"
-    restart: always
+    restart: on-failure
     volumes:
+      # Mount site configuration directory
       - ./config:/usr/local/apache2/conf/config:ro
+      # Mount website directory
       - ./src:/usr/local/apache2/htdocs:ro
