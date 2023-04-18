@@ -543,17 +543,52 @@ body > footer .license svg {
 
     .masthead {
         padding-top: 60px;
+        display: block;
     }
+
+    button.expand-menu {
+        position: absolute;
+        top: 4em;
+        right: 0;
+        display: inline-block;
+        padding: .3em .5em;
+        border: 1px solid rgba(1,1,1,.1);
+        border: none;
+        background: #F5F5F5;
+        border-radius: 3px;
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400; 
+        font-size: 1em;
+    }
+
     .primary-menu {
         display: none;
     }
+
+    .primary-menu.expand {
+        display: initial;
+    }
+
+    .primary-menu.expand ul {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top: 1.5em;
+    }
+
+    .primary-menu.expand ul li {
+        margin: 0;
+        padding: 1em 0;
+        border-top: 1px solid rgba(1,1,1,.1);
+    }
+
     .ancilliary-menu {
         /* display: none; */
     }
 
-    button.expand-menu {
-        display: inline-block;
-    }
+
 
 }
 
