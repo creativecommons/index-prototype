@@ -334,8 +334,9 @@ body > footer h2 {
     font-size: 1.25em;
 }
 
-body > footer a:link {
+body > footer a {
     color: var(--vocabulary-brand-color-turquoise);
+    text-decoration: none;
 }
 
 body > footer p {
@@ -343,11 +344,11 @@ body > footer p {
 }
 
 /* needs to be moved to be broader in general specificity scope */
-body > footer p a:link {
+body > footer p a {
     /* better hyperlink underline typesetting inspired by Tufte CSS */
     --underline-color: var(--vocabulary-brand-color-turquoise);
     --underline-background-color: black;
-
+    color: 
     text-decoration: none;
 
     /* adapted from Tufte.css -- Copyright (c) 2014 Dave Liepmann -- https://github.com/edwardtufte/tufte-css -- https://github.com/edwardtufte/tufte-css/blob/gh-pages/LICENSE */
