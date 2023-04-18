@@ -548,22 +548,28 @@ body > footer .license svg {
 
     button.expand-menu {
         position: absolute;
-        top: 4em;
+        top: 4.5em;
         right: 0;
         display: inline-block;
         padding: .3em .5em;
         border: 1px solid rgba(1,1,1,.1);
         border: none;
         background: #F5F5F5;
-        border-radius: 3px;
-        font-family: 'Source Sans Pro';
+
+
+        border-radius: 5px;
+
+        text-transform: uppercase;
+        font-family: 'Roboto Condensed';
         font-style: normal;
-        font-weight: 400; 
+        font-weight: 700; 
         font-size: 1em;
+        padding: .5rem 1rem;
     }
 
     .primary-menu {
         display: none;
+        
     }
 
     .primary-menu.expand {
@@ -576,6 +582,7 @@ body > footer .license svg {
         margin: 0;
         padding: 0;
         margin-top: 1.5em;
+        /* background: #F5F5F5; */
     }
 
     .primary-menu.expand ul li {
