@@ -48,7 +48,15 @@
     font-display: swap;
     src: url(../../fonts/vocabulary/SourceSansPro-Bold.woff2) format("woff2"),
         url(../../fonts/vocabulary/SourceSansPro-Bold.woff) format("woff"),
-            url(../../vocabulary/fonts/SourceSansPro-Bold.otf) format("opentype");
+            url(../../fonts/vocabulary/SourceSansPro-Bold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Accidenz Commons";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../../fonts/vocabulary/AccidenzCommons.otf) format("opentype");          
 }
 
 

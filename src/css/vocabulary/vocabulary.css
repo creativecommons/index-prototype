@@ -90,6 +90,80 @@ header {
     border: 2px solid purple;
 }
 
+/* style product identity typesetting */
+.masthead .identity-logo.product {
+    width: initial;
+    position: relative;
+    text-indent: 42px;
+    padding-top: 7px;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    font-family: "Accidenz Commons";
+    font-weight: normal;
+    text-transform: lowercase;
+    letter-spacing: -1px;
+    line-height: 1em;
+    -webkit-mask-image: none;
+    mask-image: none;
+    background: none;
+    color: black;
+}
+
+/* style product identity mini-cc-logo */
+.masthead .identity-logo.product:before {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    content: '';
+    left: 0;
+    top: .176em;
+   
+    background-color: black;
+    -webkit-mask-image: url('../../svg/cc/logos/cc/lettermark.svg');
+    mask-image: url('../../svg/cc/logos/cc/lettermark.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/* style product identity typesetting */
+.masthead .identity-logo.product {
+    width: initial;
+    position: relative;
+    text-indent: 42px;
+    padding-top: 7px;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    font-family: "Accidenz Commons";
+    font-weight: normal;
+    text-transform: lowercase;
+    letter-spacing: -1px;
+    line-height: 1em;
+    -webkit-mask-image: none;
+    mask-image: none;
+    background: none;
+    color: black;
+}
+
+/* style product identity mini-cc-logo */
+.masthead .identity-logo.product:before {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    content: '';
+    left: 0;
+    top: .176em;
+   
+    background-color: black;
+    -webkit-mask-image: url('../../svg/cc/logos/cc/lettermark.svg');
+    mask-image: url('../../svg/cc/logos/cc/lettermark.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    cursor: pointer;
+}
+
 /* .masthead .primary-menu {
     margin-top: 45px;
     vertical-align: bottom;
@@ -597,17 +671,53 @@ body > footer .license svg {
 
     .masthead {
         padding-top: 60px;
+        display: block;
     }
+
+    button.expand-menu {
+        position: absolute;
+        top: 4.5em;
+        right: 0;
+        display: inline-block;
+        padding: .3em .5em;
+        border: none;
+        border-radius: 5px;
+        background: #F5F5F5;
+        text-transform: uppercase;
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 700; 
+        font-size: 1em;
+        padding: .5rem 1rem;
+    }
+
     .primary-menu {
         display: none;
+        
+    }
+
+    .primary-menu.expand {
+        display: initial;
+    }
+
+    .primary-menu.expand ul {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top: 1.5em;
+    }
+
+    .primary-menu.expand ul li {
+        margin: 0;
+        padding: 1em 0;
+        border-top: 1px solid rgba(1,1,1,.1);
     }
     /* .ancilliary-menu {
         display: none;
     } */
 
-    button.expand-menu {
-        display: inline-block;
-    }
+
 
 }
 
