@@ -90,6 +90,43 @@ header {
     border: 2px solid purple;
 }
 
+/* style product identity typesetting */
+.masthead .identity-logo.product {
+    width: initial;
+    position: relative;
+    text-indent: 42px;
+    padding-top: 7px;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    font-family: "Accidenz Commons";
+    font-weight: normal;
+    text-transform: lowercase;
+    letter-spacing: -1px;
+    line-height: 1em;
+    -webkit-mask-image: none;
+    mask-image: none;
+    background: none;
+    color: black;
+}
+
+/* style product identity mini-cc-logo */
+.masthead .identity-logo.product:before {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    content: '';
+    left: 0;
+    top: .176em;
+   
+    background-color: black;
+    -webkit-mask-image: url('../../svg/cc/logos/cc/lettermark.svg');
+    mask-image: url('../../svg/cc/logos/cc/lettermark.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    cursor: pointer;
+}
+
 .masthead .primary-menu {
     /* margin-top: 45px; */
     /* vertical-align: bottom; */
