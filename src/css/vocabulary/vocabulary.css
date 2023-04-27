@@ -546,6 +546,10 @@ body > footer .subscribe form input.input {
     width: 100%;
 }
 
+body > footer .subscribe form input.input:focus {
+    color: white;
+}
+
 body > footer .subscribe form input.button {
     justify-content: center;
     padding: 1.1em;
