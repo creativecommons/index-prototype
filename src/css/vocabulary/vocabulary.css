@@ -2,6 +2,31 @@
 This is a prototype file for Vocabulary, 
 that may be later ported into Vocabulary 
 proper.
+
+Style rules are written with two sections 
+at current, separated by an empty line. 
+
+1. for layout, positioning, and related. 
+
+2. for visual configuration such 
+as color, font, background, etc.
+
+EX: 
+.selector {
+    layout style: rule here
+
+    visual style: rule here
+}
+
+EX:
+.article {
+    position: relative;
+    width: 100%;
+
+    color: blue;
+    text-decoration: none;
+}
+    
 */
 
 @import 'vendor/normalize.css';
@@ -423,7 +448,7 @@ body > footer p a {
     --underline-color: var(--vocabulary-brand-color-turquoise);
     --underline-background-color: black;
     color: var(--vocabulary-brand-color-turquoise);
-    text-decoration: none;
+    /* text-decoration: none; */
 
     /* adapted from Tufte.css -- Copyright (c) 2014 Dave Liepmann -- https://github.com/edwardtufte/tufte-css -- https://github.com/edwardtufte/tufte-css/blob/gh-pages/LICENSE */
     background: -webkit-linear-gradient(var( --underline-color), var( --underline-color)), -webkit-linear-gradient(var( --underline-color), var( --underline-color)), -webkit-linear-gradient(currentColor, currentColor);
