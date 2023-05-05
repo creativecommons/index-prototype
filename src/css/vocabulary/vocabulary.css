@@ -412,7 +412,6 @@ main {
     padding: 0 2em;
 }
 
-
 main > header {
     display: flex;
     flex-wrap: wrap;
@@ -459,8 +458,6 @@ main > header .categories {
     font-weight: 400;
     /* text-transform: uppercase; */
 }
-
-
 
 main > header .byline {
     display: block;
@@ -845,6 +842,10 @@ body > footer .license svg {
     /* .ancilliary-menu {
         display: none;
     } */
+
+    main {
+        width: 80%;
+    }
 
 
 
