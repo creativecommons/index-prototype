@@ -471,6 +471,36 @@ main > header .byline {
     font-style: italic;
 }
 
+main .series {
+    display: inline-block;
+    /* position: absolute;
+    left: -25%;
+    bottom: -10%; */
+    box-sizing: border-box;
+    /* min-height: 150px; */
+    width: 25%;
+    /* float: left; */
+    /* margin: 2em; */
+    margin-bottom: 2em;
+    padding: 2em;
+    width: 100%;
+
+    font-family: 'Source Sans Pro';
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    background: #FEEDE9;
+    /* color: white; */
+    /* color: var(--vocabulary-brand-color-dark-tomato); */
+    
+}
+
+
+main .series a {
+    color: var(--vocabulary-brand-color-dark-tomato);
+}
+
 main p {
     margin-bottom: 2em;
     
