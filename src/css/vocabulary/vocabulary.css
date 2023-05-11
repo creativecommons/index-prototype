@@ -405,6 +405,76 @@ button.expand-menu {
 
 }
 
+
+
+
+
+
+.default-page main > header {
+    justify-content: left;
+    text-align: left;
+}
+
+.default-page main > header:before {
+    left: -5.5%;
+
+    display: none;
+}
+
+.default-page main {
+    width: 90%;
+    box-sizing: border-box;
+    display: grid;
+    gap: 0 4.1em;
+    grid-template-columns: 1fr 1.8fr 1fr;
+    grid-template-areas: 
+    'header header header'
+    'content content sidebar';
+
+}
+
+.default-page main > header {
+   
+    display: block;
+    grid-area: header;
+    padding-top: 1em;
+
+}
+
+.default-page main > aside {
+    grid-area: sidebar;
+    /* width: 100%; */
+
+}
+
+.default-page main > .content {
+    grid-area: content;
+    /* width: 100%; */
+}
+
+.default-page main > .content p:nth-child(1) {
+    margin-top: 0;
+}
+
+/* 
+.default-page main > .content {
+    grid-column: span 3;
+    width: 100%;
+}
+
+.default-page main:has(aside) {
+    gap: 0;
+}
+
+.default-page main:has(aside) > .content {
+    grid-area: content;
+} */
+
+
+
+
+/*/////////////////////////*/
+
 main {
     width: 60%;
     margin: 0 auto;
@@ -438,7 +508,7 @@ main > header:before {
 
 main > header h1 {
     font-family: 'Roboto Condensed';
-    font-size: 4em;
+    font-size: 3.56em;
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
