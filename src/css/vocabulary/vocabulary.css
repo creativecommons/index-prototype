@@ -573,6 +573,83 @@ body {
 
 
 
+.archive-page main > .content a {
+     /* better hyperlink underline typesetting inspired by Tufte CSS */
+     --underline-color: var(--vocabulary-brand-color-dark-tomato);
+     --underline-background-color: white;
+     color: var(--vocabulary-brand-color-dark-tomato);
+     text-decoration: none;
+ 
+     /* adapted from Tufte.css -- Copyright (c) 2014 Dave Liepmann -- https://github.com/edwardtufte/tufte-css -- https://github.com/edwardtufte/tufte-css/blob/gh-pages/LICENSE */
+     background: -webkit-linear-gradient(var( --underline-color), var( --underline-color)), -webkit-linear-gradient(var( --underline-color), var( --underline-color)), -webkit-linear-gradient(currentColor, currentColor);
+     background: linear-gradient(var( --underline-color), var( --underline-color)), linear-gradient(var( --underline-color), var( --underline-color)), linear-gradient(currentColor, currentColor);
+     -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+     -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+     background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+     background-repeat: no-repeat, no-repeat, repeat-x;
+     text-shadow: 0.03em 0 var(--underline-background-color), -0.03em 0 var(--underline-background-color), 0 0.03em var(--underline-background-color), 0 -0.03em var(--underline-background-color), 0.06em 0 var(--underline-background-color), -0.06em 0 var(--underline-background-color), 0.09em 0 var(--underline-background-color), -0.09em 0 var(--underline-background-color), 0.12em 0 var(--underline-background-color), -0.12em 0 var(--underline-background-color), 0.15em 0 var(--underline-background-color), -0.15em 0 var(--underline-background-color);
+     background-position: 0% 93%, 100% 93%, 0% 93%;
+     /* background-position-y: 87%, 87%, 87%; */
+}
+
+.archive-page main > .content article {
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'title title'
+    'image teaser';
+    gap: 2em;
+    margin-bottom: 8em;
+}
+
+.archive-page main > .content article h2 {
+    grid-area: title;
+    width: 100%;
+}
+
+.archive-page main > .content article figure {
+    display: inline-block;
+    width: 50%;
+    grid-area: image;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+.archive-page main > .content article img {
+    /* width: 50%; */
+    width: 100%;
+    /* float: left; */
+    /* margin-right: 1em; */
+
+}
+
+.archive-page main > .content article p {
+    flex: 1;
+    display: inline-block;
+    grid-area: teaser;
+    margin-top: 0;
+}
+
+.archive-page main > .content article .attribution {
+    /* grid-area: image; */
+    /* grid-row-start: 3; */
+    display: inline-block;
+    margin-top: 1em;
+    /* background: #F5F5F5; */
+}
+
+.archive-page main > .content article p:before {
+    clear: both;
+}
+
+.archive-page main > .content article ul {
+    width: 100%;
+}
+
+
 
 /*/////////////////////////*/
 
