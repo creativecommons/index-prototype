@@ -433,17 +433,31 @@ button.expand-menu {
 }
 
 .default-page main > header {
-   
     display: block;
     grid-area: header;
     padding-top: 1em;
 
 }
 
+.default-page main > header h1 {
+    margin-bottom: 0;
+
+}
+
+.default-page main > header p {
+    /* margin-top: 0;
+    margin-bottom: 0; */
+
+}
+
 .default-page main > aside {
     grid-area: sidebar;
     /* width: 100%; */
+}
 
+
+.default-page main > aside h2:nth-child(1) {
+    margin-top: 0;
 }
 
 .default-page main > .content {
