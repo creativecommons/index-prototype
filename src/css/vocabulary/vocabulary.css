@@ -416,9 +416,7 @@ button.expand-menu {
 }
 
 .default-page main > header:before {
-    left: -5.5%;
-
-    display: none;
+    left: -9%;
 }
 
 .default-page main {
