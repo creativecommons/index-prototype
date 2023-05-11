@@ -416,7 +416,7 @@ button.expand-menu {
 }
 
 .default-page main > header:before {
-    left: -9%;
+    left: -5.5%;
 }
 
 .default-page main {
@@ -424,10 +424,11 @@ button.expand-menu {
     box-sizing: border-box;
     display: grid;
     gap: 0 4.1em;
-    grid-template-columns: 1fr 1.84fr 1fr;
+    grid-template-columns: 1fr 1.22fr 1fr;
     grid-template-areas: 
     'header header header'
     'content content sidebar';
+    padding: 0;
 
 }
 
