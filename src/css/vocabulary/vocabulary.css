@@ -691,6 +691,37 @@ body > article.attention a {
     width: 100%;
 }
 
+.archive-page main .pagination ol {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-indent: none;
+
+    list-style: none;
+
+}
+
+.archive-page main .pagination ol li {
+    margin: 0 .5em;
+}
+
+.archive-page main .pagination ol li a {
+    padding: .4em .7em;
+
+    background: #F5F5F5;
+    color: black;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.archive-page main .pagination ol li.current a {
+    background: black;
+    color: white;
+}
 
 
 /*/////////////////////////*/
@@ -699,6 +730,7 @@ main {
     width: 60%;
     margin: 0 auto;
     /* margin-top: 2em; */
+    margin-bottom: 8em;
     padding: 0 2em;
 }
 
