@@ -65,6 +65,7 @@ body > header {
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    margin-bottom: 2em;
     /* padding: 0 var(--vocabulary-page-edges-space); */
 }
 
@@ -411,6 +412,23 @@ body {
     overflow-x: hidden;
 }
 
+body > article.attention {
+    background: var(--vocabulary-brand-color-soft-green);
+    padding: 1em 5%;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 150%;
+    border-bottom: 3px solid white;
+}
+
+body > article.attention a {
+    color: var(--vocabulary-brand-color-dark-green);
+    --underline-background-color: var(--vocabulary-brand-color-soft-green);
+
+}
 
 .default-page main > header {
     justify-content: left;
@@ -532,6 +550,21 @@ body {
     margin-top: 0;
 }
 
+.default-page main > aside .attention {
+    background: var(--vocabulary-brand-color-soft-turquoise);
+    margin-top: 5em;
+    padding: 1.5em;
+}
+
+.default-page main > aside .attention p {
+    font-size: 1em;
+}
+
+.default-page main > aside .attention a {
+    --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
+
+}
+
 .default-page main > .content {
     grid-area: content;
     /* width: 100%; */
@@ -604,9 +637,18 @@ body {
     margin-bottom: 8em;
 }
 
+.archive-page main > .content article header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .archive-page main > .content article h2 {
     grid-area: title;
     width: 100%;
+}
+
+.archive-page main > .content article .categories {
+    order: -1;
 }
 
 .archive-page main > .content article figure {
@@ -656,7 +698,7 @@ body {
 main {
     width: 60%;
     margin: 0 auto;
-    margin-top: 2em;
+    /* margin-top: 2em; */
     padding: 0 2em;
 }
 

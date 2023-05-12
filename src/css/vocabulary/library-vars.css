@@ -62,9 +62,18 @@
 
 :root {
     /* brand colors */
+    
     --vocabulary-brand-color-gold: #FBD43C;
+    --vocabulary-brand-color-green: #008000;
     --vocabulary-brand-color-tomato: #C74200;
     --vocabulary-brand-color-turquoise: #05b5da;
+
+    --vocabulary-brand-color-soft-gold: #FEF6D8;
+
+    --vocabulary-brand-color-soft-green: #E0F5E0;
+    --vocabulary-brand-color-dark-green: #005d00;
+
+    --vocabulary-brand-color-soft-turquoise: #DFF6FC;
 
     --vocabulary-brand-color-soft-tomato: #FEEDE9;
     --vocabulary-brand-color-dark-tomato: #903101; 
