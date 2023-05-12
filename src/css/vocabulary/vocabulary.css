@@ -778,6 +778,8 @@ main > header:before {
 }
 
 main > header h1 {
+    width: 100%;
+    
     font-family: 'Roboto Condensed';
     font-size: 3.56em;
     font-style: normal;
