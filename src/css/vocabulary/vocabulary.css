@@ -2,6 +2,31 @@
 This is a prototype file for Vocabulary, 
 that may be later ported into Vocabulary 
 proper.
+
+Style rules are written with two sections 
+at current, separated by an empty line. 
+
+1. for layout, positioning, and related. 
+
+2. for visual configuration such 
+as color, font, background, etc.
+
+EX: 
+.selector {
+    layout style: rule here
+
+    visual style: rule here
+}
+
+EX:
+.article {
+    position: relative;
+    width: 100%;
+
+    color: blue;
+    text-decoration: none;
+}
+    
 */
 
 @import 'vendor/normalize.css';
@@ -127,11 +152,48 @@ header {
     cursor: pointer;
 }
 
-.masthead .primary-menu {
-    /* margin-top: 45px; */
-    /* vertical-align: bottom; */
-    
+/* style product identity typesetting */
+.masthead .identity-logo.product {
+    width: initial;
+    position: relative;
+    text-indent: 42px;
+    padding-top: 7px;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    font-family: "Accidenz Commons";
+    font-weight: normal;
+    text-transform: lowercase;
+    letter-spacing: -1px;
+    line-height: 1em;
+    -webkit-mask-image: none;
+    mask-image: none;
+    background: none;
+    color: black;
 }
+
+/* style product identity mini-cc-logo */
+.masthead .identity-logo.product:before {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    content: '';
+    left: 0;
+    top: .176em;
+   
+    background-color: black;
+    -webkit-mask-image: url('../../svg/cc/logos/cc/lettermark.svg');
+    mask-image: url('../../svg/cc/logos/cc/lettermark.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/* .masthead .primary-menu {
+    margin-top: 45px;
+    vertical-align: bottom;
+    
+} */
 
 .masthead .primary-menu ul {
     display: flex;
@@ -391,8 +453,9 @@ body > footer h2 {
     font-size: 1.25em;
 }
 
-body > footer a:link {
+body > footer a {
     color: var(--vocabulary-brand-color-turquoise);
+    text-decoration: none;
 }
 
 body > footer p {
@@ -400,12 +463,12 @@ body > footer p {
 }
 
 /* needs to be moved to be broader in general specificity scope */
-body > footer p a:link {
+body > footer p a {
     /* better hyperlink underline typesetting inspired by Tufte CSS */
     --underline-color: var(--vocabulary-brand-color-turquoise);
     --underline-background-color: black;
-
-    text-decoration: none;
+    color: var(--vocabulary-brand-color-turquoise);
+    /* text-decoration: none; */
 
     /* adapted from Tufte.css -- Copyright (c) 2014 Dave Liepmann -- https://github.com/edwardtufte/tufte-css -- https://github.com/edwardtufte/tufte-css/blob/gh-pages/LICENSE */
     background: -webkit-linear-gradient(var( --underline-color), var( --underline-color)), -webkit-linear-gradient(var( --underline-color), var( --underline-color)), -webkit-linear-gradient(currentColor, currentColor);
@@ -492,6 +555,63 @@ body > footer .social-menu li a {
 
 body > footer .subscribe {
     grid-area: subscribe;
+}
+
+body > footer .subscribe form {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+body > footer .subscribe form input {
+    display: inline-flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    vertical-align: top;
+    box-sizing: border-box;
+    
+    -webkit-appearance: none;
+    background-color: transparent;
+    color: rgb(118, 118, 118);
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.3;
+    border: 2px solid rgb(118, 118, 118);;
+    /* border-radius: 4px; */
+    box-shadow: none;
+    
+}
+
+body > footer .subscribe form input.input {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: .5em;
+    width: 100%;
+}
+
+body > footer .subscribe form input.input:focus {
+    color: white;
+}
+
+body > footer .subscribe form input.button {
+    justify-content: center;
+    padding: 1.1em;
+    
+    cursor: pointer;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.125rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 0;
+    white-space: nowrap;
+    background-color: rgb(118, 118, 118);
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: rgb(255, 255, 255);  
 }
 
 body > footer .donate {
@@ -642,10 +762,9 @@ body > footer .license svg {
         padding: 1em 0;
         border-top: 1px solid rgba(1,1,1,.1);
     }
-
-    .ancilliary-menu {
-        /* display: none; */
-    }
+    /* .ancilliary-menu {
+        display: none;
+    } */
 
 
 
@@ -659,6 +778,19 @@ body > footer .license svg {
 
     body > footer {
         display: block;
+    }
+
+    body > footer > nav {
+        margin-top: 1em;
+        margin-bottom: 3em;
+    }
+
+    body > footer > nav ul li {
+        margin-bottom: 1em;
+    }
+
+    body > footer > div {
+        margin-bottom: 4em;
     }
 }
 
