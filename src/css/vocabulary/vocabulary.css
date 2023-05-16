@@ -684,6 +684,13 @@ body > footer .license svg {
     }
 }
 
+@media (max-width:340px) {
+    .ancilliary-menu button:before, .ancilliary-menu a:before {
+        display: none;
+    }
+
+}
+
 
 
 
