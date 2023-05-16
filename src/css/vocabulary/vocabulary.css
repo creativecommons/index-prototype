@@ -270,11 +270,12 @@ button.expand-menu {
 .ancilliary-menu button.locale {
     display: inline-flex;
     align-items: center;
-    padding: 4px 10px;
+    padding: 6px 10px;
 
 
     background:  var(--vocabulary-neutral-color-lighter-gray);
     border: none;
+    border-radius: 3px;
 }
 
 .ancilliary-menu button.locale.icon-attach:before {
@@ -289,7 +290,7 @@ button.expand-menu {
 .ancilliary-menu a.donate {
     display: inline-flex;
     align-items: center;
-    padding: 4px 10px;
+    padding: 6px 10px;
 
     text-decoration: none;
     background: var(--vocabulary-brand-color-soft-tomato);
@@ -308,13 +309,14 @@ button.expand-menu {
 .ancilliary-menu a.search {
     display: inline-flex;
     align-items: center;
-    padding: 4px 10px;
+    padding: 6px 10px;
 
     font-weight: normal;
     text-decoration: none;
     background:  var(--vocabulary-neutral-color-lighter-gray);
     color: #000;
     border: none;
+    border-radius: 3px;
 }
 
 .ancilliary-menu a.search.icon-attach:before {
@@ -326,8 +328,8 @@ button.expand-menu {
 
 .ancilliary-menu button.explore {
     margin-top: 0;
-    padding-top: 14px;
-    padding-bottom: 5px;
+    padding-top: 16px;
+    padding-bottom: 6px;
     padding-left: 10px;
     padding-right: 10px;
 
