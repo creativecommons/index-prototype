@@ -177,6 +177,7 @@ button.expand-menu {
     font-style: normal;
     font-weight: 600; 
     font-size: .8em;
+    /* font-size: 1em; */
 }
 
 .ancilliary-menu ul {
@@ -237,6 +238,25 @@ button.expand-menu {
 .ancilliary-menu a.donate.icon-attach:before {
     --icon-sprite: var(--fa-heart);
     --icon-sprite-color: var(--vocabulary-brand-color-dark-tomato);   
+     --icon-sprite-size: .8em;
+
+    margin-right: .8em;
+}
+
+.ancilliary-menu a.search {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+
+    font-weight: normal;
+    text-decoration: none;
+    background:  var(--vocabulary-neutral-color-lighter-gray);
+    color: #000;
+    border: none;
+}
+
+.ancilliary-menu a.search.icon-attach:before {
+    --icon-sprite: var(--fa-search);
      --icon-sprite-size: .8em;
 
     margin-right: .8em;
