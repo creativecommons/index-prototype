@@ -124,7 +124,7 @@ header {
     box-sizing: border-box;
 
     text-decoration: none;
-    font-family: "Accidenz Commons";
+    font-family: "CC Accidenz Commons"; /* replaced with font-family: "CC Accidenz Commons"; */
     font-weight: normal;
     text-transform: lowercase;
     letter-spacing: -1px;
@@ -161,7 +161,7 @@ header {
     box-sizing: border-box;
 
     text-decoration: none;
-    font-family: "Accidenz Commons";
+    font-family: "CC Accidenz Commons"; /* replaced with font-family: "CC Accidenz Commons"; */
     font-weight: normal;
     text-transform: lowercase;
     letter-spacing: -1px;
