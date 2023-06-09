@@ -625,7 +625,7 @@ body > article.attention a {
 
 
 
-.archive-page main > .content a {
+.authored-posts a {
      /* better hyperlink underline typesetting inspired by Tufte CSS */
      --underline-color: var(--vocabulary-brand-color-dark-tomato);
      --underline-background-color: white;
@@ -644,7 +644,7 @@ body > article.attention a {
      /* background-position-y: 87%, 87%, 87%; */
 }
 
-.archive-page main > .content article {
+.authored-posts article {
     display: flex;
     flex-wrap: wrap;
     /* display: grid; */
@@ -656,21 +656,21 @@ body > article.attention a {
     margin-bottom: 8em;
 }
 
-.archive-page main > .content article header {
+.authored-posts article header {
     display: flex;
     flex-wrap: wrap;
 }
 
-.archive-page main > .content article h2 {
+.authored-posts article h2 {
     grid-area: title;
     width: 100%;
 }
 
-.archive-page main > .content article .categories {
+.authored-posts article .categories {
     order: -1;
 }
 
-.archive-page main > .content article figure {
+.authored-posts article figure {
     display: inline-block;
     width: 50%;
     grid-area: image;
@@ -679,7 +679,7 @@ body > article.attention a {
     flex: 1;
 }
 
-.archive-page main > .content article img {
+.authored-posts article img {
     /* width: 50%; */
     width: 100%;
     /* float: left; */
@@ -687,14 +687,14 @@ body > article.attention a {
 
 }
 
-.archive-page main > .content article p {
+.authored-posts article p {
     flex: 1;
     display: inline-block;
     grid-area: teaser;
     margin-top: 0;
 }
 
-.archive-page main > .content article .attribution {
+.authored-posts article .attribution {
     /* grid-area: image; */
     /* grid-row-start: 3; */
     display: inline-block;
@@ -702,11 +702,11 @@ body > article.attention a {
     /* background: #F5F5F5; */
 }
 
-.archive-page main > .content article p:before {
+.authored-posts article p:before {
     clear: both;
 }
 
-.archive-page main > .content article ul {
+.authored-posts article ul {
     width: 100%;
 }
 
@@ -741,6 +741,83 @@ body > article.attention a {
     background: black;
     color: white;
 }
+
+
+
+.team-page main > header {
+    position: relative;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    /* grid-template-areas: 
+    'picture info'
+    'picture info'
+    'picture info'; */
+    gap: 0 5em;
+}
+
+.team-page main > header h1 {
+    grid-column-start: 2;
+
+    margin-bottom: .1em;
+    
+}
+
+.team-page main > header .title {
+    grid-column-start: 2;
+    margin-bottom: 1em;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.9em;
+}
+
+.team-page main > header figure {
+    box-sizing: border-box;
+    position: absolute;
+    margin: 0;
+    padding:0;
+
+    top: 3.4em;
+    left: 0;
+    width: 30%;
+}
+
+.team-page main > header figure img {
+    box-sizing: border-box;
+
+    width: 100%;
+
+    border: 16px solid white;
+}
+
+.team-page main > header .bio {
+    grid-column-start: 2;
+    
+    font-size: .9em;
+
+}
+
+.team-page main .authored-posts {
+    grid-area: content;
+}
+
+.team-page main .authored-posts h2 {
+
+    font-family: 'Roboto Condensed';
+    font-size: 2.1em;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.team-page main .authored-posts article img {
+    /* generalize this better */
+    width: 100%;
+}
+
 
 
 /*/////////////////////////*/
