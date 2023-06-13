@@ -111,9 +111,24 @@ header {
 }
 
 /* TODO: needs focus outline to be fixed */
-.masthead .identity-logo:focus {
-    border: 2px solid purple;
+/* .masthead .identity-logo:focus {
+    position: relative;
 }
+
+.masthead .identity-logo:focus:before {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    content: '';
+
+    border: 60px solid purple;
+    -webkit-mask-image: none;
+    mask-image: none;
+} */
 
 /* style product identity typesetting */
 .masthead .identity-logo.product {
