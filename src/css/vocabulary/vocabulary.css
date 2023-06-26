@@ -412,6 +412,7 @@ body {
     overflow-x: hidden;
 }
 
+/* top page banner */
 body > article.attention {
     background: var(--vocabulary-brand-color-soft-green);
     padding: 1em 5%;
@@ -422,6 +423,12 @@ body > article.attention {
     font-size: 1.2em;
     line-height: 150%;
     border-bottom: 3px solid white;
+}
+
+/* bottom page banner */
+body > article.attention:nth-of-type(2) {
+    /* grid-column: span 3; */
+    background: var(--vocabulary-brand-color-soft-gold);
 }
 
 body > article.attention a {
@@ -804,8 +811,6 @@ main nav.pagination ol li.current a {
 
     font-size: .8em;
 }
-
-
 
 .team-index main .persons .person img {
     width: 100%;
