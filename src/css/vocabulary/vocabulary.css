@@ -710,7 +710,11 @@ body > article.attention a {
     width: 100%;
 }
 
-.archive-page main .pagination ol {
+nav.pagination {
+    grid-column: span 3;
+}
+
+nav.pagination ol {
     display: flex;
     margin: 0;
     padding: 0;
@@ -720,11 +724,11 @@ body > article.attention a {
 
 }
 
-.archive-page main .pagination ol li {
+main nav.pagination ol li {
     margin: 0 .5em;
 }
 
-.archive-page main .pagination ol li a {
+main nav.pagination ol li a {
     padding: .4em .7em;
 
     background: #F5F5F5;
@@ -737,14 +741,101 @@ body > article.attention a {
     text-decoration: none;
 }
 
-.archive-page main .pagination ol li.current a {
+main nav.pagination ol li.current a {
     background: black;
     color: white;
 }
 
+.team-index main .persons {
+    grid-column: span 3;
+    margin-bottom: 5em;
+}
+
+.team-index main .persons h2 {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.1em;
+}
+
+.team-index main .persons ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4em;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.team-index main .persons .person {
+    display: flex;
+    flex-wrap: wrap;
+
+    font-family: 'Source Sans Pro';
+}
+
+.team-index main .persons .person h3 {
+    margin-top: .6em;
+    margin-bottom: .5em;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    /* line-height: 150%; */
+}
+
+.team-index main .persons .person .title {
+    margin-bottom: .4em;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: .8125em;
+    line-height: 150%;
+}
+
+.team-index main .persons .person figure {
+    order: -1;
+    margin: 0;
+    padding: 0;
+
+    font-size: .8em;
+}
 
 
-.team-page main > header {
+
+.team-index main .persons .person img {
+    width: 100%;
+}
+
+
+.team-index main .persons .person a {
+     /* better hyperlink underline typesetting inspired by Tufte CSS */
+     --underline-color: var(--vocabulary-brand-color-dark-tomato);
+     --underline-background-color: white;
+     color: var(--vocabulary-brand-color-dark-tomato);
+     text-decoration: none;
+ 
+     /* adapted from Tufte.css -- Copyright (c) 2014 Dave Liepmann -- https://github.com/edwardtufte/tufte-css -- https://github.com/edwardtufte/tufte-css/blob/gh-pages/LICENSE */
+     background: -webkit-linear-gradient(var( --underline-color), var( --underline-color)), -webkit-linear-gradient(var( --underline-color), var( --underline-color)), -webkit-linear-gradient(currentColor, currentColor);
+     background: linear-gradient(var( --underline-color), var( --underline-color)), linear-gradient(var( --underline-color), var( --underline-color)), linear-gradient(currentColor, currentColor);
+     -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+     -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+     background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+     background-repeat: no-repeat, no-repeat, repeat-x;
+     text-shadow: 0.03em 0 var(--underline-background-color), -0.03em 0 var(--underline-background-color), 0 0.03em var(--underline-background-color), 0 -0.03em var(--underline-background-color), 0.06em 0 var(--underline-background-color), -0.06em 0 var(--underline-background-color), 0.09em 0 var(--underline-background-color), -0.09em 0 var(--underline-background-color), 0.12em 0 var(--underline-background-color), -0.12em 0 var(--underline-background-color), 0.15em 0 var(--underline-background-color), -0.15em 0 var(--underline-background-color);
+     background-position: 0% 93%, 100% 93%, 0% 93%;
+     /* background-position-y: 87%, 87%, 87%; */
+}
+
+.team-index main .persons .person p {
+    font-size: 1em;
+}
+
+.person-page main > header {
     position: relative;
     box-sizing: border-box;
     display: grid;
@@ -756,14 +847,14 @@ body > article.attention a {
     gap: 0 5em;
 }
 
-.team-page main > header h1 {
+.person-page main > header h1 {
     grid-column-start: 2;
 
     margin-bottom: .1em;
     
 }
 
-.team-page main > header .title {
+.person-page main > header .title {
     grid-column-start: 2;
     margin-bottom: 1em;
 
@@ -773,7 +864,7 @@ body > article.attention a {
     font-size: 1.9em;
 }
 
-.team-page main > header figure {
+.person-page main > header figure {
     box-sizing: border-box;
     position: absolute;
     margin: 0;
@@ -784,7 +875,7 @@ body > article.attention a {
     width: 30%;
 }
 
-.team-page main > header figure img {
+.person-page main > header figure img {
     box-sizing: border-box;
 
     width: 100%;
@@ -792,18 +883,18 @@ body > article.attention a {
     border: 16px solid white;
 }
 
-.team-page main > header .bio {
+.person-page main > header .bio {
     grid-column-start: 2;
     
     font-size: .9em;
 
 }
 
-.team-page main .authored-posts {
+.person-page main .authored-posts {
     grid-area: content;
 }
 
-.team-page main .authored-posts h2 {
+.person-page main .authored-posts h2 {
 
     font-family: 'Roboto Condensed';
     font-size: 2.1em;
@@ -813,7 +904,7 @@ body > article.attention a {
 
 }
 
-.team-page main .authored-posts article img {
+.person-page main .authored-posts article img {
     /* generalize this better */
     width: 100%;
 }
