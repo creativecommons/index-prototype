@@ -1480,6 +1480,36 @@ body > footer .license svg {
     body > footer > div {
         margin-bottom: 4em;
     }
+
+    .default-page main {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .team-index main .persons ul {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .person-page main > header {
+        display: flex;
+    }
+
+    .person-page main > header figure {
+        width: auto;
+        margin-bottom: 3em;
+        position: relative;
+
+        order: -1;
+    }
+
+    nav.pagination {
+        width: 100%;
+    }
+
+    nav.pagination ol {
+        /* width: 100%; */
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 580px) {
@@ -1501,6 +1531,10 @@ body > footer .license svg {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+    }
+
+    .team-index main .persons ul {
+        display: initial;
     }
 }
 
