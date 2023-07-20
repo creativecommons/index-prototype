@@ -139,7 +139,11 @@
      /* font awesome sprite names */
      --fa-globe: url('../../svg/font-awesome/icons/fa-icons.svg#fa-globe');
      --fa-heart: url('../../svg/font-awesome/icons/fa-icons.svg#fa-heart');
+<<<<<<< HEAD
      --fa-right-angle: url('../../svg/font-awesome/icons/fa-icons.svg#fa-right-angle');
+=======
+     --fa-search: url('../../svg/font-awesome/icons/fa-icons.svg#fa-search');
+>>>>>>> origin/main
  
      --fa-instagram: url('../../svg/font-awesome/icons/fa-icons.svg#fa-instagram');
      --fa-twitter: url('../../svg/font-awesome/icons/fa-icons.svg#fa-twitter');
@@ -190,8 +194,13 @@ leaving room for semantic and accessible implementation choices  */
     --icon-sprite: var(--fa-heart);
 }
 
+<<<<<<< HEAD
 .icon.fa-right-angle, .icon-attach.fa-righ-angle:before {
     --icon-sprite: var(--fa-heart);
+=======
+.icon.fa-search, .icon-attach.fa-search:before {
+    --icon-sprite: var(--fa-search);
+>>>>>>> origin/main
 }
 
 .icon-replace.fa-instagram {

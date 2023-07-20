@@ -112,9 +112,24 @@ body > header {
 }
 
 /* TODO: needs focus outline to be fixed */
-.masthead .identity-logo:focus {
-    border: 2px solid purple;
+/* .masthead .identity-logo:focus {
+    position: relative;
 }
+
+.masthead .identity-logo:focus:before {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    content: '';
+
+    border: 60px solid purple;
+    -webkit-mask-image: none;
+    mask-image: none;
+} */
 
 /* style product identity typesetting */
 .masthead .identity-logo.product {
@@ -240,6 +255,7 @@ button.expand-menu {
     font-style: normal;
     font-weight: 600; 
     font-size: .8em;
+    /* font-size: 1em; */
 }
 
 .ancilliary-menu ul {
@@ -270,11 +286,12 @@ button.expand-menu {
 .ancilliary-menu button.locale {
     display: inline-flex;
     align-items: center;
-    padding: 4px 10px;
+    padding: 6px 10px;
 
 
     background:  var(--vocabulary-neutral-color-lighter-gray);
     border: none;
+    border-radius: 3px;
 }
 
 .ancilliary-menu button.locale.icon-attach:before {
@@ -289,7 +306,7 @@ button.expand-menu {
 .ancilliary-menu a.donate {
     display: inline-flex;
     align-items: center;
-    padding: 4px 10px;
+    padding: 6px 10px;
 
     text-decoration: none;
     background: var(--vocabulary-brand-color-soft-tomato);
@@ -305,10 +322,30 @@ button.expand-menu {
     margin-right: .8em;
 }
 
+.ancilliary-menu a.search {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px;
+
+    font-weight: normal;
+    text-decoration: none;
+    background:  var(--vocabulary-neutral-color-lighter-gray);
+    color: #000;
+    border: none;
+    border-radius: 3px;
+}
+
+.ancilliary-menu a.search.icon-attach:before {
+    --icon-sprite: var(--fa-search);
+     --icon-sprite-size: .8em;
+
+    margin-right: .8em;
+}
+
 .ancilliary-menu button.explore {
     margin-top: 0;
-    padding-top: 14px;
-    padding-bottom: 5px;
+    padding-top: 16px;
+    padding-bottom: 6px;
     padding-left: 10px;
     padding-right: 10px;
 
@@ -1553,6 +1590,13 @@ body > footer .license svg {
     .team-index main .persons ul {
         display: initial;
     }
+}
+
+@media (max-width:340px) {
+    .ancilliary-menu button:before, .ancilliary-menu a:before {
+        display: none;
+    }
+
 }
 
 
