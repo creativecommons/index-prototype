@@ -193,6 +193,8 @@ leaving room for semantic and accessible implementation choices  */
 
 .icon.fa-right-angle, .icon-attach.fa-righ-angle:before {
     --icon-sprite: var(--fa-heart);
+}
+
 .icon.fa-search, .icon-attach.fa-search:before {
     --icon-sprite: var(--fa-search);
 }
@@ -262,5 +264,4 @@ leaving room for semantic and accessible implementation choices  */
   
     --icon-sprite: var(--cc-logo);
 }
-
 
