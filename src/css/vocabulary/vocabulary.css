@@ -1454,6 +1454,10 @@ body > footer .license svg {
         width: 80%;
     }
 
+    main > header:before {
+        left: initial;
+    }
+
 
 
 }
@@ -1483,7 +1487,16 @@ body > footer .license svg {
 
     .default-page main {
         display: block;
-        margin: 0 auto;
+        /* margin: 0 auto; */
+    }
+
+    .default-page main > aside .attention {
+        margin-bottom: 5em;
+    }
+
+    .authored-posts article figure {
+        width: 100%;
+        flex: initial;
     }
 
     .team-index main .persons ul {
@@ -1509,6 +1522,10 @@ body > footer .license svg {
     nav.pagination ol {
         /* width: 100%; */
         flex-wrap: wrap;
+    }
+
+    nav.pagination ol li {
+        line-height: 250%;
     }
 }
 
