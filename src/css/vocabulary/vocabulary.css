@@ -648,7 +648,68 @@ body > article.attention a {
     grid-area: content;
 } */
 
+.blog-index main {
+    width: 100%;
+    padding: 0;
+}
 
+.blog-index main > header:before {
+    left: initial;
+}
+
+.blog-index main > header {
+    padding-bottom: 5em;
+}
+
+.blog-index main > header h1 {
+    margin-bottom: 0;
+}
+
+.blog-index main .stories {
+    margin-top: -10em;
+    padding: 0 4em;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    gap: 2em;
+    box-sizing: border-box;
+
+
+}
+
+.blog-index main .stories .story {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.blog-index main .stories .story header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.blog-index main .stories .story h2 {
+    text-transform: initial;
+}
+
+
+.blog-index main .stories .story header .categories {
+    order: -1;
+}
+
+.blog-index main .stories .story figure {
+    margin: 0;
+}
+
+.blog-index main .stories .story figure img {
+    width: 100%;
+}
+
+
+.blog-index main .stories .story p {
+    display: none;
+}
 
 .blog-post  main h2 {
     font-family: 'Roboto Condensed';
