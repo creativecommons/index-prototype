@@ -96,8 +96,8 @@ body > header {
     
     /* allows for color manipulation of svg */
     background-color: black;
-    -webkit-mask-image: url('../../svg/cc/logos/cc/logomark.svg');
-    mask-image: url('../../svg/cc/logos/cc/logomark.svg');
+    -webkit-mask-image: url('./../svg/cc/logos/cc/logomark.svg');
+    mask-image: url('./../svg/cc/logos/cc/logomark.svg');
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     cursor: pointer;
@@ -161,8 +161,8 @@ body > header {
     top: .176em;
    
     background-color: black;
-    -webkit-mask-image: url('../../svg/cc/logos/cc/lettermark.svg');
-    mask-image: url('../../svg/cc/logos/cc/lettermark.svg');
+    -webkit-mask-image: url('./../svg/cc/logos/cc/lettermark.svg');
+    mask-image: url('./../svg/cc/logos/cc/lettermark.svg');
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     cursor: pointer;
@@ -198,8 +198,8 @@ body > header {
     top: .176em;
    
     background-color: black;
-    -webkit-mask-image: url('../../svg/cc/logos/cc/lettermark.svg');
-    mask-image: url('../../svg/cc/logos/cc/lettermark.svg');
+    -webkit-mask-image: url('./../svg/cc/logos/cc/lettermark.svg');
+    mask-image: url('./../svg/cc/logos/cc/lettermark.svg');
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     cursor: pointer;
@@ -381,8 +381,8 @@ button.expand-menu {
     
     /* allows for color manipulation of svg */
     background-color: white;
-    -webkit-mask-image: url('../../svg/cc/logos/cc/logomark.svg');
-    mask-image: url('../../svg/cc/logos/cc/logomark.svg');
+    -webkit-mask-image: url('./../svg/cc/logos/cc/logomark.svg');
+    mask-image: url('./../svg/cc/logos/cc/logomark.svg');
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     cursor: pointer;
@@ -1276,8 +1276,8 @@ body > footer .identity-logo {
     
     /* allows for color manipulation of svg */
     background-color: white;
-    -webkit-mask-image: url('../../svg/cc/logos/cc/logomark.svg');
-    mask-image: url('../../svg/cc/logos/cc/logomark.svg');
+    -webkit-mask-image: url('./../svg/cc/logos/cc/logomark.svg');
+    mask-image: url('./../svg/cc/logos/cc/logomark.svg');
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     cursor: pointer;
