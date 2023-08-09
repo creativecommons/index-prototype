@@ -658,60 +658,78 @@ body > article.attention a {
 }
 
 .blog-index main > header {
-    padding-bottom: 5em;
+    padding-top: 1em;
+    /* padding-bottom: 5em; */
 }
 
 .blog-index main > header h1 {
+    margin-top: 0.67em;
     margin-bottom: 0;
 }
 
-.blog-index main .stories {
-    margin-top: -10em;
+.blog-index main .authored-posts {
+    /* margin-top: -10em; */
     padding: 0 4em;
     display: grid;
     grid-template-columns: 3fr 1fr 1fr;
-    gap: 2em;
+    gap: 3em;
     box-sizing: border-box;
-
 
 }
 
-.blog-index main .stories .story {
+.blog-index main .authored-posts article {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    position: relative;
 }
 
-.blog-index main .stories .story header {
+
+
+.blog-index main .authored-posts article header {
     display: flex;
     flex-wrap: wrap;
 }
 
 
-
-.blog-index main .stories .story h2 {
+.blog-index main .authored-posts article h2 {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-transform: none;
     text-transform: initial;
 }
 
+.blog-index main .authored-posts article:nth-child(1) h2 {
+    font-size: 2.1em;
+}
 
-.blog-index main .stories .story header .categories {
+
+.blog-index main .stories article header .categories {
     order: -1;
 }
 
-.blog-index main .stories .story figure {
+.blog-index main .authored-posts article figure {
+    width: 100%;
     margin: 0;
 }
 
-.blog-index main .stories .story figure img {
+.blog-index main .authored-posts article figure img {
+    /* position: absolute;
+    top: 2em;
+    left: 0;
+    z-index: -1; */
     width: 100%;
+   
 }
 
 
-.blog-index main .stories .story p {
+.blog-index main .authored-posts article p {
     display: none;
 }
 
-.blog-post  main h2 {
+.blog-post main h2 {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
@@ -719,7 +737,13 @@ body > article.attention a {
     text-transform: none;
 }
 
-.blog-post  main h3 {
+.authored-posts article h2 {
+    grid-area: title;
+    width: 100%;
+}
+
+
+.blog-post main h3 {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
