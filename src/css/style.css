@@ -1,6 +1,7 @@
-/* more bespoke bits here */
 
-@import 'vocabulary/library-vars.css';
+@import '../vocabulary/css/vocabulary.css' layer(vocabulary);
+
+/* more bespoke bits here */
 
 .home-narrative > article:nth-of-type(3) {
   background:var(--vocabulary-brand-color-tomato);
