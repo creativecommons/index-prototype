@@ -778,6 +778,65 @@ body > article.attention a {
     text-transform: none;
 }
 
+
+
+
+.news-index main {
+    width: 100%;
+    padding: 0;
+}
+
+.news-index main > header:before {
+    left: initial;
+    background: white;
+}
+
+.news-index main > header {
+    padding-top: 1em;
+    /* padding-bottom: 5em; */
+    margin-bottom: 0;
+
+}
+
+.news-index main > header h1 {
+    margin-top: 0.67em;
+    margin-bottom: 0;
+}
+
+.news-index main .authored-posts.highlight {
+    margin-top: 0;
+
+    /* background: var(--vocabulary-neutral-color-lighter-gray); */
+}
+
+.news-index main .authored-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 8em;
+    padding: 0 4em;
+    gap: 3em;
+    box-sizing: border-box;
+}
+
+.news-index main .authored-posts article:nth-child(1) {
+    grid-column: span 3;
+
+    background: var(--vocabulary-brand-color-soft-tomato);
+    padding: 4em;
+}
+
+.news-index main .authored-posts article:nth-child(1) a {
+    --underline-background-color: var(--vocabulary-brand-color-soft-tomato);
+}
+
+
+
+
+
+
+
+
+
 .search-index .search-form form {
     display: flex;
     width: 100%;
