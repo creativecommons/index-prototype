@@ -872,7 +872,7 @@ body > article.attention a {
 .happening-index main .authored-posts.highlight {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 3em 2em;
     margin: 0 auto 8em auto;
     padding: 4em;
@@ -936,7 +936,7 @@ body > article.attention a {
     display: grid;
     grid-template-areas: 'img header'
                         'img teaser';
-    grid-column: span 4;
+    grid-column: span 3;
     gap: 2em;
     margin-bottom: 1em;
     position: relative;
