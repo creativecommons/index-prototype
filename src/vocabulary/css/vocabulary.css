@@ -779,8 +779,6 @@ body > article.attention a {
 }
 
 
-
-
 .news-index main {
     width: 100%;
     padding: 0;
@@ -788,7 +786,7 @@ body > article.attention a {
 
 .news-index main > header:before {
     left: initial;
-    background: white;
+    /* background: white; */
 }
 
 .news-index main > header {
@@ -803,31 +801,79 @@ body > article.attention a {
     margin-bottom: 0;
 }
 
-.news-index main .authored-posts.highlight {
-    margin-top: 0;
-
-    /* background: var(--vocabulary-neutral-color-lighter-gray); */
-}
-
 .news-index main .authored-posts {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 8em;
     padding: 0 4em;
     gap: 3em;
-    box-sizing: border-box;
+    box-sizing: border-box; */
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 8em;
 }
 
-.news-index main .authored-posts article:nth-child(1) {
-    grid-column: span 3;
+.news-index main .authored-posts.highlight {
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 8em;
+    padding: 0 4em;
+    gap: 2em;
+    box-sizing: border-box;
+
+
+    width:100%;
+    margin: 0 auto;
+    margin-top: 0;
+    /* padding: 0; */
+
+    background: var(--vocabulary-neutral-color-lighter-gray);
+}
+
+.news-index main .authored-posts.highlight article figure {
+    order: -1;
+    
+}
+
+.news-index main .authored-posts.highlight article a {
+    --underline-background-color: var(--vocabulary-neutral-color-lighter-gray);
+}
+
+.news-index main .authored-posts.highlight article h2 {
+    font-size: 1.4em;
+}
+
+.news-index main .authored-posts.highlight article:nth-child(1) {
+    grid-column: span 4;
+    margin-bottom: 1em;
+    padding: 4em;
 
     background: var(--vocabulary-brand-color-soft-tomato);
-    padding: 4em;
+    /* background: var(--vocabulary-brand-color-soft-turquoise); */
+    background: white;
 }
 
-.news-index main .authored-posts article:nth-child(1) a {
+.news-index main .authored-posts.highlight article:nth-child(1) a {
     --underline-background-color: var(--vocabulary-brand-color-soft-tomato);
+    /* --underline-background-color: var(--vocabulary-brand-color-soft-turquoise); */
+    --underline-background-color: white;
 }
+
+.news-index main .authored-posts.highlight article:nth-child(1) h2 {
+    font-size: 2.1em;
+}
+
+.news-index main .authored-posts.highlight article:nth-child(1) figure {
+    order: initial;
+}
+
+/* .news-index main .authored-posts.highlight article:nth-child(2) {
+    padding-left: 4em;
+}
+
+ .news-index main .authored-posts.highlight article:nth-child(4) {
+    margin-right: 4em;
+ } */
 
 
 
