@@ -833,6 +833,165 @@ body > article.attention a {
 
 
 
+.happening-index main {
+    width: 100%;
+    padding: 0;
+}
+
+.happening-index main > header:before {
+    left: initial;
+    background: white;
+}
+
+.happening-index main > header {
+    padding-top: 1em;
+    /* padding-bottom: 5em; */
+    margin-bottom: 0;
+
+}
+
+.happening-index main > header h1 {
+    margin-top: 0.67em;
+    margin-bottom: 0;
+}
+
+.happening-index main .authored-posts {
+    width: 60%;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    margin: 8em auto 0 auto;
+    /* padding-top: 8em; */
+    /* padding: 0 4em;
+    gap: 3em;
+    box-sizing: border-box; */
+    position: relative;
+
+}
+
+
+.happening-index main .authored-posts.highlight {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3em 2em;
+    margin: 0 auto 8em auto;
+    padding: 4em;
+    padding-top: 3em;
+    box-sizing: border-box;
+
+    background: var(--vocabulary-neutral-color-lighter-gray);
+    background: white;
+}
+
+.happening-index main .authored-posts.highlight:before {
+    display: block;
+    content: '';
+    height: calc(100% + 8em);
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: -5.5%;
+    z-index: -1;
+
+    background: var(--vocabulary-neutral-color-lighter-gray);
+    background: white;
+
+}
+
+/* .happening-index main .authored-posts.highlight:after {
+    display: block;
+    content: '';
+    height: 4em;
+} */
+
+.happening-index main .authored-posts.highlight article {
+    position: relative;
+    gap: initial;
+    margin-bottom: 0;
+}
+
+.happening-index main .authored-posts.highlight article h2 {
+    font-size: 1.3em;
+}
+
+.happening-index main .authored-posts.highlight article .categories {
+    /* position: absolute;
+    top: -2.5em;
+    left: 0; */
+    display: block;
+    width: 100%;
+    order: 1;
+    margin-top: 1em;
+}
+
+/* .happening-index main .authored-posts.highlight article .byline {
+    order: 2;
+} */
+
+.happening-index main .authored-posts.highlight article figure {
+    order: -2;
+}
+
+.happening-index main .authored-posts.highlight article:nth-child(1) {
+    display: grid;
+    grid-template-areas: 'img header'
+                        'img teaser';
+    grid-column: span 4;
+    gap: 2em;
+    margin-bottom: 1em;
+    position: relative;
+
+    /* background: var(--vocabulary-brand-color-soft-tomato); */
+    /* padding: 4em; */
+}
+
+.happening-index main .authored-posts.highlight article:nth-child(1) header {
+    grid-area: header;
+}
+
+.happening-index main .authored-posts.highlight article a {
+    /* --underline-background-color: var(--vocabulary-brand-color-soft-tomato); */
+    /* --underline-background-color: var(--vocabulary-neutral-color-lighter-gray); */
+
+}
+
+.happening-index main .authored-posts.highlight article:nth-child(1) h2 {
+    /* font-size: 1.8em; */
+}
+
+.happening-index main .authored-posts.highlight article:nth-child(1) figure {
+    grid-area: img;
+    width: 100%;
+    margin-top: 1.5em;
+
+}
+
+.happening-index main .authored-posts.highlight article:nth-child(1) p {
+    grid-area: teaser;
+    
+    font-size: 1.2em;
+
+}
+
+.happening-index main .authored-posts.highlight article:nth-child(1) .categories {
+    /* position: absolute;
+    top: -1.5em;
+    left: 0; */
+    /* order: 1; */
+
+    /* display: inline-block;
+    width: initial;
+    position: absolute;
+    bottom: -1em;
+    right: 0; */
+
+}
+
+
+
+
+
+
 
 
 
@@ -915,6 +1074,14 @@ body > article.attention a {
 .authored-posts article h2 {
     grid-area: title;
     width: 100%;
+
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    font-size: 2.1em;
+    text-transform: none;
+    text-transform: initial;
 }
 
 .authored-posts article .categories {
