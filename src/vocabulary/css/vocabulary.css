@@ -1148,7 +1148,7 @@ body > article.attention a {
     font-size: 2.1em;
     font-style: normal;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .authored-posts a {
