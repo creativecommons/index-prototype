@@ -1390,10 +1390,10 @@ main figure:nth-of-type(even) {
 }
 
 main figure:nth-of-type(even):after {
-    /* display: block;
+    display: block;
     content: '';
     height: 3em;
-    clear: both; */
+    clear: both;
 }
 
 main figure:nth-of-type(odd) {
@@ -1405,10 +1405,10 @@ main figure:nth-of-type(odd) {
 }
 
 main figure:nth-of-type(odd):after {
-    /* display: block;
+    display: block;
     content: '';
-    height: 3em;
-    clear: both; */
+    height: 2em;
+    clear: both;
 }
 
 main figure:nth-of-type(1) {
