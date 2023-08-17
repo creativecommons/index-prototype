@@ -756,7 +756,13 @@ body > article.attention a {
     display: none;
 }
 
-.blog-index-alt .blog-post main h2 {
+
+
+
+
+
+
+.blog-post main h2 {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
@@ -770,7 +776,7 @@ body > article.attention a {
 }
 
 
-.blog-index-alt .blog-post main h3 {
+.blog-post main h3 {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
@@ -1031,7 +1037,7 @@ body > article.attention a {
     margin-top: 1em;
 }
 
-/* .happening-index main .authored-posts.highlight article .byline {
+/* .blog-index-alt2 main .authored-posts.highlight article .byline {
     order: 2;
 } */
 
