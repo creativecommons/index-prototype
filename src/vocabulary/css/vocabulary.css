@@ -609,7 +609,7 @@ body > article.attention a {
     /* width: 100%; */
 }
 
-.default-page main > .content h2 {
+/* .default-page main > .content h2 {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
@@ -623,7 +623,7 @@ body > article.attention a {
     font-weight: 700;
     font-size: 1.75em;
     text-transform: none;
-}
+} */
 
 .default-page main > .content p:nth-child(1) {
     margin-top: 0;
@@ -756,13 +756,13 @@ body > article.attention a {
     display: none;
 }
 
-.blog-post main h2 {
+/* .blog-post main h2 {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
     font-size: 2.1em;
     text-transform: none;
-}
+} */
 
 .authored-posts article h2 {
     grid-area: title;
@@ -770,13 +770,13 @@ body > article.attention a {
 }
 
 
-.blog-post main h3 {
+/* .blog-post main h3 {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
     font-size: 1.75em;
     text-transform: none;
-}
+} */
 
 .search-index .search-form form {
     display: flex;
@@ -924,6 +924,7 @@ main nav.pagination ol li a {
     padding: .4em .7em;
 
     background: #F5F5F5;
+    --underline-background-color: #F5F5F5;
     color: black;
     font-family: 'Roboto Condensed';
     font-style: normal;
@@ -935,6 +936,7 @@ main nav.pagination ol li a {
 
 main nav.pagination ol li.current a {
     background: black;
+    --underline-background-color: black;
     color: white;
 }
 
@@ -1209,6 +1211,8 @@ main > header h1 {
 main > header a {
     /* text-decoration: none; */
     color: var(--vocabulary-brand-color-dark-tomato);
+
+    --underline-background-color: var(--vocabulary-neutral-color-lighter-gray);
 }
 
 main > header .categories {
@@ -1231,6 +1235,23 @@ main > header .byline {
     font-style: normal;
     font-weight: 400;
     font-style: italic;
+}
+
+main h2 {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.1em;
+    text-transform: none;
+
+}
+
+main h3 {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.75em;
+    text-transform: none;
 }
 
 main .series {
@@ -1261,6 +1282,27 @@ main .series {
 
 main .series a {
     color: var(--vocabulary-brand-color-dark-tomato);
+    --underline-background-color: #FEEDE9;
+}
+
+
+main a {
+     /* better hyperlink underline typesetting inspired by Tufte CSS */
+     --underline-color: var(--vocabulary-brand-color-dark-tomato);
+     --underline-background-color: white;
+     color: var(--vocabulary-brand-color-dark-tomato);
+     text-decoration: none;
+ 
+     /* adapted from Tufte.css -- Copyright (c) 2014 Dave Liepmann -- https://github.com/edwardtufte/tufte-css -- https://github.com/edwardtufte/tufte-css/blob/gh-pages/LICENSE */
+     background: -webkit-linear-gradient(var( --underline-color), var( --underline-color)), -webkit-linear-gradient(var( --underline-color), var( --underline-color)), -webkit-linear-gradient(currentColor, currentColor);
+     background: linear-gradient(var( --underline-color), var( --underline-color)), linear-gradient(var( --underline-color), var( --underline-color)), linear-gradient(currentColor, currentColor);
+     -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+     -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+     background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+     background-repeat: no-repeat, no-repeat, repeat-x;
+     text-shadow: 0.03em 0 var(--underline-background-color), -0.03em 0 var(--underline-background-color), 0 0.03em var(--underline-background-color), 0 -0.03em var(--underline-background-color), 0.06em 0 var(--underline-background-color), -0.06em 0 var(--underline-background-color), 0.09em 0 var(--underline-background-color), -0.09em 0 var(--underline-background-color), 0.12em 0 var(--underline-background-color), -0.12em 0 var(--underline-background-color), 0.15em 0 var(--underline-background-color), -0.15em 0 var(--underline-background-color);
+     background-position: 0% 93%, 100% 93%, 0% 93%;
+     /* background-position-y: 87%, 87%, 87%; */
 }
 
 main p {
@@ -1281,6 +1323,43 @@ main .pub-date {
     line-height: 150%; 
 }
 
+main ul {
+
+}
+
+main ol {
+    
+}
+
+main blockquote {
+    margin: 0;
+    margin-bottom: 1.5em;
+    padding: 0;
+
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+    font-size: 1.9em;
+}
+
+/* manually include quote icon to avoid extraneous html classes */
+main blockquote:before {
+    --icon-sprite: var(--fa-quote);
+
+    display: block;
+    content: '';
+    height: 1em;
+    width: 1em;
+
+    font-size: var(--icon-sprite-size);
+    background-color: var(--icon-sprite-color);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat; 
+    -webkit-mask-image: var(--icon-sprite);
+    mask-image: var(--icon-sprite);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+
+}
 
 
 
