@@ -900,8 +900,14 @@ body > article.attention a {
     display: flex;
     margin: 0;
     padding: 0;
+    gap: 2em;
 
     list-style: none;
+}
+
+
+.news-index main .authored-posts.highlight footer .attribution-list article {
+    margin-bottom: 1em;
 }
 
 .news-index main .authored-posts.highlight footer .attribution-list article a { 
@@ -911,6 +917,22 @@ body > article.attention a {
     --underline-background-color: var(--vocabulary-brand-color-soft-tomato);
 
 
+}
+
+.news-index main .authored-posts.highlight footer .attribution-list article figure {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.news-index main .authored-posts.highlight footer .attribution-list article img { 
+    object-fit: cover;
+    width: 4em;
+    height: 4em;
+}
+
+.news-index main .authored-posts.highlight footer .attribution-list article figure .attribution {
+    margin-top: 0;
 }
 
 
