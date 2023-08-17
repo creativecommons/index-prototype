@@ -843,7 +843,7 @@ body > article.attention a {
     font-size: 1.4em;
 }
 
-.news-index main .authored-posts.highlight article:nth-child(1) {
+.news-index main .authored-posts.highlight > article:nth-child(1) {
     grid-column: span 4;
     margin-bottom: 1em;
     padding: 4em;
@@ -874,6 +874,44 @@ body > article.attention a {
  .news-index main .authored-posts.highlight article:nth-child(4) {
     margin-right: 4em;
  } */
+
+
+
+ .news-index main .authored-posts footer {
+    grid-column: span 4;
+}
+
+.news-index main .authored-posts footer .attribution-list {
+    padding: 4em;
+    gap: 0;
+
+
+    background:  var(--vocabulary-brand-color-soft-turquoise);
+    background: var(--vocabulary-brand-color-tomato);
+    background: var(--vocabulary-brand-color-soft-tomato);
+    /* color: white; */
+}
+
+.news-index main .authored-posts footer .attribution-list h2 {
+    margin-top: 0;
+}
+
+.news-index main .authored-posts footer .attribution-list ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.news-index main .authored-posts.highlight footer .attribution-list article a { 
+    /* --underline-background-color: var(--vocabulary-brand-color-tomato); */
+    /* color: white; */
+
+    --underline-background-color: var(--vocabulary-brand-color-soft-tomato);
+
+
+}
 
 
 
