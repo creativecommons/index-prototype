@@ -1382,7 +1382,7 @@ main figure .attribution {
     margin-top: 1em;
 }
 
-main figure:nth-of-type(even):has(img) {
+/* main figure:nth-of-type(even):has(img) {
     margin-top: 2em;
     margin-right: 2em;
     width: 50%;
@@ -1409,9 +1409,9 @@ main figure:nth-of-type(odd):has(img):after {
     content: '';
     height: 2em;
     clear: both;
-}
+} */
 
-main figure:nth-of-type(1):has(img) {
+main > figure:nth-of-type(1):has(img) {
     width: 120%;
     margin: 0;
     margin-left: -10%;
@@ -1458,11 +1458,41 @@ main figure:has(iframe) {
 }
 
 main .pub-date {
+    display: inline-block;
+    margin-bottom: 4em;
+
     font-family: 'Source Sans Pro';
     font-size: 1.5em;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; 
+}
+
+main article.tags {
+    margin-bottom: 8em;
+}
+
+main article.tags ul {
+    display: flex;
+    margin: 0;
+    left: 0;
+
+    list-style: none;
+}
+
+main article.tags ul li {
+    margin-right: .5em;
+}
+
+
+main article.tags ul li:after {
+    content: ',';
+    margin-left: .1em;
+
+}
+
+main article.tags ul li:last-child:after {
+    content: '';
 }
 
 
