@@ -1246,6 +1246,20 @@ body > article.attention a {
     width: 100%;
 }
 
+.authored-posts a.more {
+    padding: .4em .7em;
+
+    background: black;
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: none;
+    text-decoration: none;
+    text-shadow: none;
+}
+
 nav.pagination {
     grid-column: span 3;
 }
