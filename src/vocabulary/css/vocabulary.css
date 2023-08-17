@@ -1429,10 +1429,10 @@ main figure:has(img.alignleft) {
 }
 
 main figure:has(img.alignleft):after {
-    /* display: block;
+    display: block;
     content: '';
     height: 3em;
-    clear: both; */
+    clear: both;
 }
 
 main figure:has(img.alignright) {
@@ -1444,10 +1444,10 @@ main figure:has(img.alignright) {
 }
 
 main figure:has(img.alignright):after {
-    /* display: block;
+    display: block;
     content: '';
     height: 2em;
-    clear: both; */
+    clear: both;
 }
 
 main .pub-date {
