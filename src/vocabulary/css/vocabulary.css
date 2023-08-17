@@ -1315,13 +1315,6 @@ main p {
     line-height: 150%; 
 }
 
-main .pub-date {
-    font-family: 'Source Sans Pro';
-    font-size: 1.5em;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; 
-}
 
 main ul, main ol {
     margin: 0 0 2em 1em;
@@ -1339,7 +1332,9 @@ main ol {
 }
 
 main blockquote {
+    width: 120%;
     margin: 0;
+    margin-left: -10%;
     margin-bottom: 1.5em;
     padding: 0;
 
@@ -1366,6 +1361,101 @@ main blockquote:before {
     -webkit-mask-size: contain;
     mask-size: contain;
 
+}
+
+main img {
+    width: 100%;
+}
+
+main figure {
+    width: 120%;
+    
+    margin: 0;
+    margin-left: -10%;
+    margin-bottom: 3em;
+    padding: 0;
+}
+
+main figure .attribution {
+
+    display: inline-block;
+    margin-top: 1em;
+}
+
+main figure:nth-of-type(even) {
+    margin-top: 2em;
+    margin-right: 2em;
+    width: 50%;
+    float: left;
+}
+
+main figure:nth-of-type(even):after {
+    /* display: block;
+    content: '';
+    height: 3em;
+    clear: both; */
+}
+
+main figure:nth-of-type(odd) {
+    margin-top: 2em;
+    margin-right: -10%;
+    margin-left: 2em;
+    width: 50%;
+    float: right;
+}
+
+main figure:nth-of-type(odd):after {
+    /* display: block;
+    content: '';
+    height: 3em;
+    clear: both; */
+}
+
+main figure:nth-of-type(1) {
+    width: 120%;
+    margin: 0;
+    margin-left: -10%;
+    margin-bottom: 3em;
+    padding: 0;
+    float: none;
+}
+
+main figure:has(img.alignleft) {
+    margin-top: 2em;
+    margin-right: 2em;
+    margin-left: -10%;
+    width: 50%;
+    float: left;
+}
+
+main figure:has(img.alignleft):after {
+    /* display: block;
+    content: '';
+    height: 3em;
+    clear: both; */
+}
+
+main figure:has(img.alignright) {
+    margin-top: 2em;
+    margin-right: -10%;
+    margin-left: 2em;
+    width: 50%;
+    float: right;
+}
+
+main figure:has(img.alignright):after {
+    /* display: block;
+    content: '';
+    height: 2em;
+    clear: both; */
+}
+
+main .pub-date {
+    font-family: 'Source Sans Pro';
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
 }
 
 
