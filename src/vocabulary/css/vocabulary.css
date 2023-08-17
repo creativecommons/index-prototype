@@ -1141,6 +1141,16 @@ body > article.attention a {
 
 
 
+.authored-posts > h2 {
+    margin-bottom: 2.1em;
+
+    font-family: 'Roboto Condensed';
+    font-size: 2.1em;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 .authored-posts a {
      /* better hyperlink underline typesetting inspired by Tufte CSS */
      --underline-color: var(--vocabulary-brand-color-dark-tomato);
@@ -1177,9 +1187,10 @@ body > article.attention a {
     flex-wrap: wrap;
 }
 
-.authored-posts article h2 {
+.authored-posts article h2, .authored-posts article h3 {
     grid-area: title;
     width: 100%;
+    margin-top: 0.83em;
 
     font-family: 'Roboto Condensed';
     font-style: normal;
@@ -1422,7 +1433,7 @@ main nav.pagination ol li.current a {
     font-size: 2.1em;
     font-style: normal;
     font-weight: 700;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 
 }
 
