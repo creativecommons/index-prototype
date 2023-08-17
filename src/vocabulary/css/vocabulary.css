@@ -643,27 +643,27 @@ body > article.attention a {
     grid-area: content;
 } */
 
-.blog-index main {
+.blog-index-alt main {
     width: 100%;
     padding: 0;
 }
 
-.blog-index main > header:before {
+.blog-index-alt main > header:before {
     left: initial;
 }
 
-.blog-index main > header {
+.blog-index-alt main > header {
     padding-top: 1em;
     /* padding-bottom: 5em; */
     margin-bottom: 0;
 }
 
-.blog-index main > header h1 {
+.blog-index-alt main > header h1 {
     margin-top: 0.67em;
     margin-bottom: 0;
 }
 
-.blog-index main .authored-posts {
+.blog-index-alt main .authored-posts {
     margin-top: 8em;
     padding: 0 4em;
     display: grid;
@@ -672,7 +672,7 @@ body > article.attention a {
     box-sizing: border-box;
 }
 
-.blog-index main .authored-posts.highlight {
+.blog-index-alt main .authored-posts.highlight {
     /* margin-top: -10em; */
     margin-top: 0;
     padding: 0 4em;
@@ -685,19 +685,19 @@ body > article.attention a {
 
 }
 
-.blog-index main .authored-posts article {
+.blog-index-alt main .authored-posts article {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     position: relative;
 }
 
-.blog-index main .authored-posts.highlight article a {
+.blog-index-alt main .authored-posts.highlight article a {
     --underline-background-color: var(--vocabulary-neutral-color-lighter-gray);
 
 }
 
-.blog-index main .authored-posts.highlight article:nth-child(1) {
+.blog-index-alt main .authored-posts.highlight article:nth-child(1) {
     grid-column: span 3;
     padding: 2em;
 
@@ -707,19 +707,19 @@ body > article.attention a {
 }
 
 
-.blog-index main .authored-posts.highlight article:nth-child(1) a {
+.blog-index-alt main .authored-posts.highlight article:nth-child(1) a {
     --underline-background-color: white;
     /* background: white; */
 }
 
 
-.blog-index main .authored-posts article header {
+.blog-index-alt main .authored-posts article header {
     display: flex;
     flex-wrap: wrap;
 }
 
 
-.blog-index main .authored-posts article h2 {
+.blog-index-alt main .authored-posts article h2 {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
@@ -728,21 +728,21 @@ body > article.attention a {
     text-transform: initial;
 }
 
-.blog-index main .authored-posts.highlight article:nth-child(1) h2 {
+.blog-index-alt main .authored-posts.highlight article:nth-child(1) h2 {
     font-size: 2.1em;
 }
 
 
-.blog-index main .authored-posts article header .categories {
+.blog-index-alt main .authored-posts article header .categories {
     order: -1;
 }
 
-.blog-index main .authored-posts article figure {
+.blog-index-alt main .authored-posts article figure {
     width: 100%;
     margin: 0;
 }
 
-.blog-index main .authored-posts article figure img {
+.blog-index-alt main .authored-posts article figure img {
     /* position: absolute;
     top: 2em;
     left: 0;
@@ -752,11 +752,11 @@ body > article.attention a {
 }
 
 
-.blog-index main .authored-posts article p {
+.blog-index-alt main .authored-posts article p {
     display: none;
 }
 
-.blog-post main h2 {
+.blog-index-alt .blog-post main h2 {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
@@ -770,7 +770,7 @@ body > article.attention a {
 }
 
 
-.blog-post main h3 {
+.blog-index-alt .blog-post main h3 {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
@@ -779,29 +779,31 @@ body > article.attention a {
 }
 
 
-.news-index main {
+
+
+.blog-index main {
     width: 100%;
     padding: 0;
 }
 
-.news-index main > header:before {
+.blog-index main > header:before {
     left: initial;
     /* background: white; */
 }
 
-.news-index main > header {
+.blog-index main > header {
     padding-top: 1em;
     /* padding-bottom: 5em; */
     margin-bottom: 0;
 
 }
 
-.news-index main > header h1 {
+.blog-index main > header h1 {
     margin-top: 0.67em;
     margin-bottom: 0;
 }
 
-.news-index main .authored-posts {
+.blog-index main .authored-posts {
     /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 8em;
@@ -813,14 +815,13 @@ body > article.attention a {
     margin-top: 8em;
 }
 
-.news-index main .authored-posts.highlight {
-     display: grid;
+.blog-index main .authored-posts.highlight {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 8em;
     padding: 0 4em;
     gap: 2em;
     box-sizing: border-box;
-
 
     width:100%;
     margin: 0 auto;
@@ -830,20 +831,20 @@ body > article.attention a {
     background: var(--vocabulary-neutral-color-lighter-gray);
 }
 
-.news-index main .authored-posts.highlight article figure {
+.blog-index main .authored-posts.highlight article figure {
     order: -1;
     
 }
 
-.news-index main .authored-posts.highlight article a {
+.blog-index main .authored-posts.highlight article a {
     --underline-background-color: var(--vocabulary-neutral-color-lighter-gray);
 }
 
-.news-index main .authored-posts.highlight article h2 {
+.blog-index main .authored-posts.highlight article h2 {
     font-size: 1.4em;
 }
 
-.news-index main .authored-posts.highlight > article:nth-child(1) {
+.blog-index main .authored-posts.highlight > article:nth-child(1) {
     grid-column: span 4;
     margin-bottom: 1em;
     padding: 4em;
@@ -853,35 +854,35 @@ body > article.attention a {
     background: white;
 }
 
-.news-index main .authored-posts.highlight article:nth-child(1) a {
+.blog-index main .authored-posts.highlight article:nth-child(1) a {
     --underline-background-color: var(--vocabulary-brand-color-soft-tomato);
     /* --underline-background-color: var(--vocabulary-brand-color-soft-turquoise); */
     --underline-background-color: white;
 }
 
-.news-index main .authored-posts.highlight article:nth-child(1) h2 {
+.blog-index main .authored-posts.highlight article:nth-child(1) h2 {
     font-size: 2.1em;
 }
 
-.news-index main .authored-posts.highlight article:nth-child(1) figure {
+.blog-index main .authored-posts.highlight article:nth-child(1) figure {
     order: initial;
 }
 
-/* .news-index main .authored-posts.highlight article:nth-child(2) {
+/* .blog-index main .authored-posts.highlight article:nth-child(2) {
     padding-left: 4em;
 }
 
- .news-index main .authored-posts.highlight article:nth-child(4) {
+ .blog-index main .authored-posts.highlight article:nth-child(4) {
     margin-right: 4em;
  } */
 
 
 
- .news-index main .authored-posts footer {
+ .blog-index main .authored-posts footer {
     grid-column: span 4;
 }
 
-.news-index main .authored-posts footer .attribution-list {
+.blog-index main .authored-posts footer .attribution-list {
     padding: 4em;
     gap: 0;
 
@@ -892,11 +893,11 @@ body > article.attention a {
     /* color: white; */
 }
 
-.news-index main .authored-posts footer .attribution-list h2 {
+.blog-index main .authored-posts footer .attribution-list h2 {
     margin-top: 0;
 }
 
-.news-index main .authored-posts footer .attribution-list ul {
+.blog-index main .authored-posts footer .attribution-list ul {
     display: flex;
     margin: 0;
     padding: 0;
@@ -906,11 +907,11 @@ body > article.attention a {
 }
 
 
-.news-index main .authored-posts.highlight footer .attribution-list article {
+.blog-index main .authored-posts.highlight footer .attribution-list article {
     margin-bottom: 1em;
 }
 
-.news-index main .authored-posts.highlight footer .attribution-list article a { 
+.blog-index main .authored-posts.highlight footer .attribution-list article a { 
     /* --underline-background-color: var(--vocabulary-brand-color-tomato); */
     /* color: white; */
 
@@ -919,19 +920,19 @@ body > article.attention a {
 
 }
 
-.news-index main .authored-posts.highlight footer .attribution-list article figure {
+.blog-index main .authored-posts.highlight footer .attribution-list article figure {
     display: flex;
     gap: 1em;
     margin-top: 1em;
 }
 
-.news-index main .authored-posts.highlight footer .attribution-list article img { 
+.blog-index main .authored-posts.highlight footer .attribution-list article img { 
     object-fit: cover;
     width: 4em;
     height: 4em;
 }
 
-.news-index main .authored-posts.highlight footer .attribution-list article figure .attribution {
+.blog-index main .authored-posts.highlight footer .attribution-list article figure .attribution {
     margin-top: 0;
 }
 
@@ -939,29 +940,29 @@ body > article.attention a {
 
 
 
-.happening-index main {
+.blog-index-alt2 main {
     width: 100%;
     padding: 0;
 }
 
-.happening-index main > header:before {
+.blog-index-alt2 main > header:before {
     left: initial;
     background: white;
 }
 
-.happening-index main > header {
+.blog-index-alt2 main > header {
     padding-top: 1em;
     /* padding-bottom: 5em; */
     margin-bottom: 0;
 
 }
 
-.happening-index main > header h1 {
+.blog-index-alt2 main > header h1 {
     margin-top: 0.67em;
     margin-bottom: 0;
 }
 
-.happening-index main .authored-posts {
+.blog-index-alt2 main .authored-posts {
     width: 60%;
     /* display: grid;
     grid-template-columns: 1fr 1fr 1fr; */
@@ -975,7 +976,7 @@ body > article.attention a {
 }
 
 
-.happening-index main .authored-posts.highlight {
+.blog-index-alt2 main .authored-posts.highlight {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -989,7 +990,7 @@ body > article.attention a {
     background: white;
 }
 
-.happening-index main .authored-posts.highlight:before {
+.blog-index-alt2 main .authored-posts.highlight:before {
     display: block;
     content: '';
     height: calc(100% + 8em);
@@ -1004,23 +1005,23 @@ body > article.attention a {
 
 }
 
-/* .happening-index main .authored-posts.highlight:after {
+/* .blog-index-alt2 main .authored-posts.highlight:after {
     display: block;
     content: '';
     height: 4em;
 } */
 
-.happening-index main .authored-posts.highlight article {
+.blog-index-alt2 main .authored-posts.highlight article {
     position: relative;
     gap: initial;
     margin-bottom: 0;
 }
 
-.happening-index main .authored-posts.highlight article h2 {
+.blog-index-alt2 main .authored-posts.highlight article h2 {
     font-size: 1.3em;
 }
 
-.happening-index main .authored-posts.highlight article .categories {
+.blog-index-alt2 main .authored-posts.highlight article .categories {
     /* position: absolute;
     top: -2.5em;
     left: 0; */
@@ -1034,11 +1035,11 @@ body > article.attention a {
     order: 2;
 } */
 
-.happening-index main .authored-posts.highlight article figure {
+.blog-index-alt2 main .authored-posts.highlight article figure {
     order: -2;
 }
 
-.happening-index main .authored-posts.highlight article:nth-child(1) {
+.blog-index-alt2 main .authored-posts.highlight article:nth-child(1) {
     display: grid;
     grid-template-areas: 'img header'
                         'img teaser';
@@ -1051,35 +1052,35 @@ body > article.attention a {
     /* padding: 4em; */
 }
 
-.happening-index main .authored-posts.highlight article:nth-child(1) header {
+.blog-index-alt2 main .authored-posts.highlight article:nth-child(1) header {
     grid-area: header;
 }
 
-.happening-index main .authored-posts.highlight article a {
+.blog-index-alt2 main .authored-posts.highlight article a {
     /* --underline-background-color: var(--vocabulary-brand-color-soft-tomato); */
     /* --underline-background-color: var(--vocabulary-neutral-color-lighter-gray); */
 
 }
 
-.happening-index main .authored-posts.highlight article:nth-child(1) h2 {
+.blog-index-alt2 main .authored-posts.highlight article:nth-child(1) h2 {
     /* font-size: 1.8em; */
 }
 
-.happening-index main .authored-posts.highlight article:nth-child(1) figure {
+.blog-index-alt2 main .authored-posts.highlight article:nth-child(1) figure {
     grid-area: img;
     width: 100%;
     margin-top: 1.5em;
 
 }
 
-.happening-index main .authored-posts.highlight article:nth-child(1) p {
+.blog-index-alt2 main .authored-posts.highlight article:nth-child(1) p {
     grid-area: teaser;
     
     font-size: 1.2em;
 
 }
 
-.happening-index main .authored-posts.highlight article:nth-child(1) .categories {
+.blog-index-alt2 main .authored-posts.highlight article:nth-child(1) .categories {
     /* position: absolute;
     top: -1.5em;
     left: 0; */
