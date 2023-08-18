@@ -920,7 +920,9 @@ body > article.attention a {
     padding: 0;
     gap: 2em;
 
+    font-size: 1em;
     list-style: none;
+
 }
 
 
