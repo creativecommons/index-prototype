@@ -778,6 +778,16 @@ body > article.attention a {
     text-transform: none;
 } */
 
+.blog-post figure {
+    width: 120%;
+    margin-left: -10%;
+}
+
+
+
+
+
+
 .search-index .search-form form {
     display: flex;
     width: 100%;
@@ -1369,10 +1379,10 @@ main img {
 }
 
 main figure {
-    width: 120%;
+    /* width: 120%; */
     
     margin: 0;
-    margin-left: -10%;
+    /* margin-left: -10%; */
     margin-bottom: 3em;
     padding: 0;
 }
