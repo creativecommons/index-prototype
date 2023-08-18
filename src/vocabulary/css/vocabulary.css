@@ -1125,6 +1125,39 @@ body > article.attention a {
 
 
 
+/* .program-page main p {
+    grid-column: span 3;
+} */
+
+.program-page main > article {
+    width: 140%;
+    margin-left: -20%;
+
+
+}
+
+.program-page main > article ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    margin: 0;
+    padding: 0;
+
+    font-size: 1em;
+    list-style: none;
+}
+
+.program-page main > article article {
+    padding: 2em;
+
+    background: var(--vocabulary-brand-color-soft-turquoise);
+    border-top: 3px solid black;
+}
+
+.program-page main > article article a {
+    --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
+}
+
 
 
 
