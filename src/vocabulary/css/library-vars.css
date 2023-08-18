@@ -139,6 +139,7 @@
      /* font awesome sprite names */
      --fa-globe: url('./../svg/font-awesome/icons/fa-icons.svg#fa-globe');
      --fa-heart: url('./../svg/font-awesome/icons/fa-icons.svg#fa-heart');
+     --fa-quote: url('./../svg/font-awesome/icons/fa-icons.svg#fa-quote');
      --fa-right-angle: url('./../svg/font-awesome/icons/fa-icons.svg#fa-right-angle');
      --fa-search: url('./../svg/font-awesome/icons/fa-icons.svg#fa-search');
  
@@ -189,6 +190,10 @@ leaving room for semantic and accessible implementation choices  */
 
 .icon.fa-heart, .icon-attach.fa-heart:before {
     --icon-sprite: var(--fa-heart);
+}
+
+.icon.fa-quote, .icon-attach.fa-quote:before {
+    --icon-sprite: var(--fa-quote);
 }
 
 .icon.fa-right-angle, .icon-attach.fa-righ-angle:before {
