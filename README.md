@@ -1,8 +1,10 @@
-# creativecommons.org-prototype
+# index-prototype
+
+`index` is the project name for the main creativecommons.org website.
 
 ## WIP
 
-🚧 **Notice 2022.03.08**: This repository is currently unstable and in
+🚧 **Notice 2022.08.03**: This repository is currently unstable and in
 development. Most current work is done via PR now, and minimally via direct commits to the `main` branch. It is currently accepting corrective PRs, and moving towards accepting feature/functionality PRs.
 
 
