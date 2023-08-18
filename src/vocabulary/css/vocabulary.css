@@ -643,27 +643,27 @@ body > article.attention a {
     grid-area: content;
 } */
 
-.blog-index main {
+.blog-index-alt main {
     width: 100%;
     padding: 0;
 }
 
-.blog-index main > header:before {
+.blog-index-alt main > header:before {
     left: initial;
 }
 
-.blog-index main > header {
+.blog-index-alt main > header {
     padding-top: 1em;
     /* padding-bottom: 5em; */
     margin-bottom: 0;
 }
 
-.blog-index main > header h1 {
+.blog-index-alt main > header h1 {
     margin-top: 0.67em;
     margin-bottom: 0;
 }
 
-.blog-index main .authored-posts {
+.blog-index-alt main .authored-posts {
     margin-top: 8em;
     padding: 0 4em;
     display: grid;
@@ -672,7 +672,7 @@ body > article.attention a {
     box-sizing: border-box;
 }
 
-.blog-index main .authored-posts.highlight {
+.blog-index-alt main .authored-posts.highlight {
     /* margin-top: -10em; */
     margin-top: 0;
     padding: 0 4em;
@@ -685,19 +685,19 @@ body > article.attention a {
 
 }
 
-.blog-index main .authored-posts article {
+.blog-index-alt main .authored-posts article {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     position: relative;
 }
 
-.blog-index main .authored-posts.highlight article a {
+.blog-index-alt main .authored-posts.highlight article a {
     --underline-background-color: var(--vocabulary-neutral-color-lighter-gray);
 
 }
 
-.blog-index main .authored-posts.highlight article:nth-child(1) {
+.blog-index-alt main .authored-posts.highlight article:nth-child(1) {
     grid-column: span 3;
     padding: 2em;
 
@@ -707,19 +707,19 @@ body > article.attention a {
 }
 
 
-.blog-index main .authored-posts.highlight article:nth-child(1) a {
+.blog-index-alt main .authored-posts.highlight article:nth-child(1) a {
     --underline-background-color: white;
     /* background: white; */
 }
 
 
-.blog-index main .authored-posts article header {
+.blog-index-alt main .authored-posts article header {
     display: flex;
     flex-wrap: wrap;
 }
 
 
-.blog-index main .authored-posts article h2 {
+.blog-index-alt main .authored-posts article h2 {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
@@ -728,21 +728,21 @@ body > article.attention a {
     text-transform: initial;
 }
 
-.blog-index main .authored-posts.highlight article:nth-child(1) h2 {
+.blog-index-alt main .authored-posts.highlight article:nth-child(1) h2 {
     font-size: 2.1em;
 }
 
 
-.blog-index main .authored-posts article header .categories {
+.blog-index-alt main .authored-posts article header .categories {
     order: -1;
 }
 
-.blog-index main .authored-posts article figure {
+.blog-index-alt main .authored-posts article figure {
     width: 100%;
     margin: 0;
 }
 
-.blog-index main .authored-posts article figure img {
+.blog-index-alt main .authored-posts article figure img {
     /* position: absolute;
     top: 2em;
     left: 0;
@@ -752,17 +752,29 @@ body > article.attention a {
 }
 
 
-.blog-index main .authored-posts article p {
+.blog-index-alt main .authored-posts article p {
     display: none;
 }
 
-/* .blog-post main h2 {
+
+
+
+
+
+
+
+
+
+
+
+
+.blog-post main h2 {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
     font-size: 2.1em;
     text-transform: none;
-} */
+}
 
 .authored-posts article h2 {
     grid-area: title;
@@ -782,6 +794,326 @@ body > article.attention a {
     width: 120%;
     margin-left: -10%;
 }
+
+
+
+
+.blog-index main {
+    width: 100%;
+    padding: 0;
+}
+
+.blog-index main > header:before {
+    left: initial;
+    /* background: white; */
+}
+
+.blog-index main > header {
+    padding-top: 1em;
+    /* padding-bottom: 5em; */
+    margin-bottom: 0;
+
+}
+
+.blog-index main > header h1 {
+    margin-top: 0.67em;
+    margin-bottom: 0;
+}
+
+.blog-index main .authored-posts {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 8em;
+    padding: 0 4em;
+    gap: 3em;
+    box-sizing: border-box; */
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 8em;
+}
+
+.blog-index main .authored-posts.highlight {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 8em;
+    padding: 0 4em;
+    gap: 2em;
+    box-sizing: border-box;
+
+    width:100%;
+    margin: 0 auto;
+    margin-top: 0;
+    /* padding: 0; */
+
+    background: var(--vocabulary-neutral-color-lighter-gray);
+}
+
+.blog-index main .authored-posts.highlight article figure {
+    order: -1;
+    
+}
+
+.blog-index main .authored-posts.highlight article a {
+    --underline-background-color: var(--vocabulary-neutral-color-lighter-gray);
+}
+
+.blog-index main .authored-posts.highlight article h2 {
+    font-size: 1.4em;
+}
+
+.blog-index main .authored-posts.highlight > article:nth-child(1) {
+    grid-column: span 4;
+    margin-bottom: 1em;
+    padding: 4em;
+
+    background: var(--vocabulary-brand-color-soft-tomato);
+    /* background: var(--vocabulary-brand-color-soft-turquoise); */
+    background: white;
+}
+
+.blog-index main .authored-posts.highlight article:nth-child(1) a {
+    --underline-background-color: var(--vocabulary-brand-color-soft-tomato);
+    /* --underline-background-color: var(--vocabulary-brand-color-soft-turquoise); */
+    --underline-background-color: white;
+}
+
+.blog-index main .authored-posts.highlight article:nth-child(1) h2 {
+    font-size: 2.1em;
+}
+
+.blog-index main .authored-posts.highlight article:nth-child(1) figure {
+    order: initial;
+}
+
+/* .blog-index main .authored-posts.highlight article:nth-child(2) {
+    padding-left: 4em;
+}
+
+ .blog-index main .authored-posts.highlight article:nth-child(4) {
+    margin-right: 4em;
+ } */
+
+
+
+ .blog-index main .authored-posts footer {
+    grid-column: span 4;
+}
+
+.blog-index main .authored-posts footer .attribution-list {
+    padding: 4em;
+    gap: 0;
+
+
+    background:  var(--vocabulary-brand-color-soft-turquoise);
+    background: var(--vocabulary-brand-color-tomato);
+    background: var(--vocabulary-brand-color-soft-tomato);
+    /* color: white; */
+}
+
+.blog-index main .authored-posts footer .attribution-list h2 {
+    margin-top: 0;
+}
+
+.blog-index main .authored-posts footer .attribution-list ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 2em;
+
+    list-style: none;
+}
+
+
+.blog-index main .authored-posts.highlight footer .attribution-list article {
+    margin-bottom: 1em;
+}
+
+.blog-index main .authored-posts.highlight footer .attribution-list article a { 
+    /* --underline-background-color: var(--vocabulary-brand-color-tomato); */
+    /* color: white; */
+
+    --underline-background-color: var(--vocabulary-brand-color-soft-tomato);
+
+
+}
+
+.blog-index main .authored-posts.highlight footer .attribution-list article figure {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.blog-index main .authored-posts.highlight footer .attribution-list article img { 
+    object-fit: cover;
+    width: 4em;
+    height: 4em;
+}
+
+.blog-index main .authored-posts.highlight footer .attribution-list article figure .attribution {
+    margin-top: 0;
+}
+
+
+
+
+
+.blog-index-alt2 main {
+    width: 100%;
+    padding: 0;
+}
+
+.blog-index-alt2 main > header:before {
+    left: initial;
+    background: white;
+}
+
+.blog-index-alt2 main > header {
+    padding-top: 1em;
+    /* padding-bottom: 5em; */
+    margin-bottom: 0;
+
+}
+
+.blog-index-alt2 main > header h1 {
+    margin-top: 0.67em;
+    margin-bottom: 0;
+}
+
+.blog-index-alt2 main .authored-posts {
+    width: 60%;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    margin: 8em auto 0 auto;
+    /* padding-top: 8em; */
+    /* padding: 0 4em;
+    gap: 3em;
+    box-sizing: border-box; */
+    position: relative;
+
+}
+
+
+.blog-index-alt2 main .authored-posts.highlight {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3em 2em;
+    margin: 0 auto 8em auto;
+    padding: 4em;
+    padding-top: 3em;
+    box-sizing: border-box;
+
+    background: var(--vocabulary-neutral-color-lighter-gray);
+    background: white;
+}
+
+.blog-index-alt2 main .authored-posts.highlight:before {
+    display: block;
+    content: '';
+    height: calc(100% + 8em);
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: -5.5%;
+    z-index: -1;
+
+    background: var(--vocabulary-neutral-color-lighter-gray);
+    background: white;
+
+}
+
+/* .blog-index-alt2 main .authored-posts.highlight:after {
+    display: block;
+    content: '';
+    height: 4em;
+} */
+
+.blog-index-alt2 main .authored-posts.highlight article {
+    position: relative;
+    gap: initial;
+    margin-bottom: 0;
+}
+
+.blog-index-alt2 main .authored-posts.highlight article h2 {
+    font-size: 1.3em;
+}
+
+.blog-index-alt2 main .authored-posts.highlight article .categories {
+    /* position: absolute;
+    top: -2.5em;
+    left: 0; */
+    display: block;
+    width: 100%;
+    order: 1;
+    margin-top: 1em;
+}
+
+/* .blog-index-alt2 main .authored-posts.highlight article .byline {
+    order: 2;
+} */
+
+.blog-index-alt2 main .authored-posts.highlight article figure {
+    order: -2;
+}
+
+.blog-index-alt2 main .authored-posts.highlight article:nth-child(1) {
+    display: grid;
+    grid-template-areas: 'img header'
+                        'img teaser';
+    grid-column: span 3;
+    gap: 2em;
+    margin-bottom: 1em;
+    position: relative;
+
+    /* background: var(--vocabulary-brand-color-soft-tomato); */
+    /* padding: 4em; */
+}
+
+.blog-index-alt2 main .authored-posts.highlight article:nth-child(1) header {
+    grid-area: header;
+}
+
+.blog-index-alt2 main .authored-posts.highlight article a {
+    /* --underline-background-color: var(--vocabulary-brand-color-soft-tomato); */
+    /* --underline-background-color: var(--vocabulary-neutral-color-lighter-gray); */
+
+}
+
+.blog-index-alt2 main .authored-posts.highlight article:nth-child(1) h2 {
+    /* font-size: 1.8em; */
+}
+
+.blog-index-alt2 main .authored-posts.highlight article:nth-child(1) figure {
+    grid-area: img;
+    width: 100%;
+    margin-top: 1.5em;
+
+}
+
+.blog-index-alt2 main .authored-posts.highlight article:nth-child(1) p {
+    grid-area: teaser;
+    
+    font-size: 1.2em;
+
+}
+
+.blog-index-alt2 main .authored-posts.highlight article:nth-child(1) .categories {
+    /* position: absolute;
+    top: -1.5em;
+    left: 0; */
+    /* order: 1; */
+
+    /* display: inline-block;
+    width: initial;
+    position: absolute;
+    bottom: -1em;
+    right: 0; */
+
+}
+
+
+
+
 
 
 
@@ -827,6 +1159,16 @@ body > article.attention a {
 
 
 
+.authored-posts > h2 {
+    margin-bottom: 2.1em;
+
+    font-family: 'Roboto Condensed';
+    font-size: 2.1em;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: none;
+}
+
 .authored-posts a {
      /* better hyperlink underline typesetting inspired by Tufte CSS */
      --underline-color: var(--vocabulary-brand-color-dark-tomato);
@@ -863,9 +1205,18 @@ body > article.attention a {
     flex-wrap: wrap;
 }
 
-.authored-posts article h2 {
+.authored-posts article h2, .authored-posts article h3 {
     grid-area: title;
     width: 100%;
+    margin-top: 0.83em;
+
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    font-size: 2.1em;
+    text-transform: none;
+    text-transform: initial;
 }
 
 .authored-posts article .categories {
@@ -910,6 +1261,20 @@ body > article.attention a {
 
 .authored-posts article ul {
     width: 100%;
+}
+
+.authored-posts a.more {
+    padding: .4em .7em;
+
+    background: black;
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: none;
+    text-decoration: none;
+    text-shadow: none;
 }
 
 nav.pagination {
@@ -1103,7 +1468,7 @@ main nav.pagination ol li.current a {
     font-size: 2.1em;
     font-style: normal;
     font-weight: 700;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 
 }
 
