@@ -1129,12 +1129,30 @@ body > article.attention a {
     grid-column: span 3;
 } */
 
+.program-page header h1 {
+    margin-bottom: 0;
+}
+
+.program-page header h2 {
+    margin-top: .25em;
+
+    font-size: 1.5em;
+}
+
+/* .program-page header p {
+    margin-top: 0;
+} */
+
 .program-page main > article {
     width: 140%;
     margin-left: -20%;
 
 
 }
+
+/* .program-page main > article h2 {
+    text-transform: uppercase;
+} */
 
 .program-page main > article ul {
     display: grid;
