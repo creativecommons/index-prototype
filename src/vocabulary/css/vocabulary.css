@@ -912,6 +912,7 @@ nav.pagination ol {
     padding: 0;
     text-indent: none;
 
+    font-size: 1em;
     list-style: none;
 
 }
@@ -1332,9 +1333,9 @@ main ol {
 }
 
 main blockquote {
-    width: 120%;
+    /* width: 120%; */
     margin: 0;
-    margin-left: -10%;
+    /* margin-left: -10%; */
     margin-bottom: 1.5em;
     padding: 0;
 
