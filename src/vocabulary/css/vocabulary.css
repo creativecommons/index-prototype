@@ -222,9 +222,10 @@ body > header {
 }
 
 .masthead .primary-menu ul li {
+    display: flex;
+    align-items: center;
     margin-top: 5px;
-    margin-left: 20px;
-    
+    margin-left: 20px;  
 }
 
 .masthead .primary-menu ul li a {
@@ -239,6 +240,15 @@ body > header {
 
 .masthead .primary-menu ul li a:hover {
     color: black;
+}
+
+.masthead .primary-menu ul li a.attention {
+    display: inline-block;
+    padding: 0.5em;
+
+    background: var(--vocabulary-brand-color-turquoise);
+    color: white;
+    border-radius: 4px;
 }
 
 button.expand-menu {
