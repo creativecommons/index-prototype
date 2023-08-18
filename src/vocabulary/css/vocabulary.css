@@ -1129,11 +1129,11 @@ body > article.attention a {
     grid-column: span 3;
 } */
 
-.program-page header h1 {
+.program-index header h1 {
     margin-bottom: 0;
 }
 
-.program-page header h2 {
+.program-index header h2 {
     margin-top: .25em;
 
     font-size: 1.5em;
@@ -1143,7 +1143,7 @@ body > article.attention a {
     margin-top: 0;
 } */
 
-.program-page main > article {
+.program-index main > article {
     width: 140%;
     margin-left: -20%;
 
@@ -1154,7 +1154,7 @@ body > article.attention a {
     text-transform: uppercase;
 } */
 
-.program-page main > article ul {
+.program-index main > article ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2em;
@@ -1165,14 +1165,14 @@ body > article.attention a {
     list-style: none;
 }
 
-.program-page main > article article {
+.program-index main > article article {
     padding: 2em;
 
     background: var(--vocabulary-brand-color-soft-turquoise);
     border-top: 3px solid black;
 }
 
-.program-page main > article article a {
+.program-index main > article article a {
     --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
 }
 
