@@ -1266,6 +1266,7 @@ body > article.attention a {
 .authored-posts article header {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .authored-posts article h2, .authored-posts article h3 {
@@ -1707,11 +1708,7 @@ main .series {
     padding: 2em;
     width: 100%;
 
-    font-family: 'Source Sans Pro';
-    font-size: 1.2em;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; 
+    
     background: #FEEDE9;
     /* color: white; */
     /* color: var(--vocabulary-brand-color-dark-tomato); */
@@ -1722,6 +1719,16 @@ main .series {
 main .series a {
     color: var(--vocabulary-brand-color-dark-tomato);
     --underline-background-color: #FEEDE9;
+}
+
+main .series p {
+    margin :0;
+    
+    font-family: 'Source Sans Pro';
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
 }
 
 
@@ -1776,14 +1783,10 @@ main blockquote {
     /* margin-left: -10%; */
     margin-bottom: 1.5em;
     padding: 0;
-
-    font-family: 'Source Sans Pro';
-    font-weight: bold;
-    font-size: 1.9em;
 }
 
 /* manually include quote icon to avoid extraneous html classes */
-main blockquote:before {
+main blockquote p:before {
     --icon-sprite: var(--fa-quote);
 
     display: block;
@@ -1802,7 +1805,18 @@ main blockquote:before {
 
 }
 
-main img {
+main blockquote p {
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+    font-size: 1.9em;
+    line-height: 105%;
+}
+
+/* main img[width] {
+    width: initial;
+} */
+
+main img:not([width]) {
     width: 100%;
 }
 
@@ -1817,7 +1831,7 @@ main figure {
 
 main figure .attribution {
 
-    display: inline-block;
+    display: block;
     margin-top: 1em;
 }
 
