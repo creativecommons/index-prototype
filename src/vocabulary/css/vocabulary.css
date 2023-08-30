@@ -1220,6 +1220,22 @@ body > article.attention a {
     border-bottom-right-radius: 4px;
 }
 
+.search-index .authored-posts article {
+    position: relative;
+}
+
+.search-index .authored-posts article .type {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .5em .7em;
+
+    background: var(--vocabulary-brand-color-soft-turquoise);
+    border-radius: 4px;
+    font-family: 'Source Sans Pro';
+
+}
+
 
 
 .authored-posts > h2 {
