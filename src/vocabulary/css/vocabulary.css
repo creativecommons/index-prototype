@@ -1285,6 +1285,12 @@ body > article.attention a {
 
 .authored-posts article .categories {
     order: -1;
+
+    font-family: 'Source Sans Pro'; 
+}
+
+.authored-posts .byline {
+    font-family: 'Source Sans Pro'; 
 }
 
 .authored-posts article figure {
@@ -1317,6 +1323,8 @@ body > article.attention a {
     display: inline-block;
     margin-top: 1em;
     /* background: #F5F5F5; */
+
+    font-family: 'Source Sans Pro'; 
 }
 
 .authored-posts article p:before {
