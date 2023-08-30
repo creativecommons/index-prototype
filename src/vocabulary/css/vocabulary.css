@@ -1935,6 +1935,7 @@ main article.tags {
 
 main article.tags ul {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     left: 0;
 
