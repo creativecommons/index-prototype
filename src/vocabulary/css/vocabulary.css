@@ -1911,6 +1911,12 @@ main figure:has(img.alignright):after {
     clear: both;
 }
 
+main figure:has(img.aligncenter) {
+    width: 100%;
+
+    margin-left: 0;
+}
+
 main figure:has(iframe) {
     width: 120%;
     margin-left: -10%;
