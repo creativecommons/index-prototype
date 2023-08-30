@@ -1426,7 +1426,7 @@ main nav.pagination ol li.current a {
 
     font-style: normal;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1em;
     /* line-height: 150%; */
 }
 
@@ -1435,7 +1435,7 @@ main nav.pagination ol li.current a {
 
     font-style: normal;
     font-weight: 600;
-    font-size: .8125em;
+    font-size: .7em;
     line-height: 150%;
 }
 
@@ -1472,7 +1472,7 @@ main nav.pagination ol li.current a {
 }
 
 .team-index main .persons .person p {
-    font-size: 1em;
+    font-size: .75em;
 }
 
 .person-page main > header {
