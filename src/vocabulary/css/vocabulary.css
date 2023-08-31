@@ -925,16 +925,15 @@ body > article.attention a {
 }
 
 .blog-index main .authored-posts footer .attribution-list ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0;
     padding: 0;
     gap: 2em;
 
     font-size: 1em;
     list-style: none;
-
 }
-
 
 .blog-index main .authored-posts.highlight footer .attribution-list article {
     margin-bottom: 1em;
@@ -2346,6 +2345,27 @@ body > footer .license svg {
     grid-area: button;
 }
 
+
+@media (max-width: 1140px) {
+    .blog-index main .authored-posts footer .attribution-list ul {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .blog-index main .authored-posts.highlight {
+        display: flex;
+        flex-wrap: wrap;
+  
+    }
+
+    .blog-index main .authored-posts.highlight > article:nth-child(1) {
+        width: 100%;
+    }
+
+}
+
 @media (max-width: 705px) {
 
     .masthead {
@@ -2404,7 +2424,31 @@ body > footer .license svg {
         left: initial;
     }
 
+    main article.related-posts {
+        width: 100%;
+        margin-left: 0;
+    }
 
+    main article.related-posts .authored-posts.highlight {
+        display: block;
+    }
+
+    .blog-index main .authored-posts footer .attribution-list ul {
+        display: block;
+    }
+
+    .program-index main > article {
+        width: 90%;
+        margin: 0;
+    }
+
+    .program-index main > article.projects ul {
+        display: block;
+    }
+
+    .program-index main > article.projects ul li {
+        margin-bottom: 2em;
+    }
 
 }
 
