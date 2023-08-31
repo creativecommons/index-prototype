@@ -1154,7 +1154,11 @@ body > article.attention a {
     text-transform: uppercase;
 } */
 
-.program-index main > article ul {
+.program-index main > article.projects {
+    margin-bottom: 8em;
+}
+
+.program-index main > article.projects ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2em;
@@ -1165,17 +1169,20 @@ body > article.attention a {
     list-style: none;
 }
 
-.program-index main > article article {
+.program-index main > article.projects article {
     padding: 2em;
 
     background: var(--vocabulary-brand-color-soft-turquoise);
     border-top: 3px solid black;
 }
 
-.program-index main > article article a {
+.program-index main > article.projects article a {
     --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
 }
 
+.program-page header p {
+    margin-top: 0;
+}
 
 
 
