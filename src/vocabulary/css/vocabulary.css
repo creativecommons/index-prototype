@@ -956,6 +956,7 @@ body > article.attention a {
 }
 
 .blog-index .attribution-list {
+    position: relative;
     padding: 4em;
     gap: 0;
 
@@ -972,7 +973,28 @@ body > article.attention a {
     margin-top: 0;
 }
 
+.blog-index .attribution-list button.expand-attribution {
+    position: absolute;
+    top: 4.5em;
+    right: 4em;
+
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: .5em;
+    font-family: "Source Sans Pro";
+}
+
+.blog-index .attribution-list button.expand-attribution.selected {
+    background: black;
+    color: white;
+}
+
 .blog-index .attribution-list ul {
+    display: none;
+}
+
+.blog-index .attribution-list ul.expand {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0;

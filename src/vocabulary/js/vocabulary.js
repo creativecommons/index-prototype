@@ -16,3 +16,13 @@ menuButton.addEventListener('click', (event) => {
     menuPanel.classList.toggle('expand');
     // explorePanel.classList.toggle('hide');
 });
+
+
+const attributionButton = document.querySelector('button.expand-attribution');
+const attributionPanel = document.querySelector('.attribution-panel');
+
+attributionButton.addEventListener('click', (event) => {
+    attributionButton.classList.toggle('selected');
+    attributionPanel.classList.toggle('expand');
+    // explorePanel.classList.toggle('hide');
+});
