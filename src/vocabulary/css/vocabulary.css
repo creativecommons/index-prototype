@@ -2417,7 +2417,7 @@ body > footer .license svg {
 
 
 @media (max-width: 1140px) {
-    .blog-index main .authored-posts footer .attribution-list ul {
+    .blog-index main footer .attribution-list ul.expand {
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -2503,7 +2503,7 @@ body > footer .license svg {
         display: block;
     }
 
-    .blog-index main .authored-posts footer .attribution-list ul {
+    .blog-index main footer .attribution-list ul.expand {
         display: block;
     }
 
