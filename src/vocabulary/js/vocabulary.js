@@ -21,8 +21,12 @@ menuButton.addEventListener('click', (event) => {
 const attributionButton = document.querySelector('button.expand-attribution');
 const attributionPanel = document.querySelector('.attribution-panel');
 
-attributionButton.addEventListener('click', (event) => {
-    attributionButton.classList.toggle('selected');
-    attributionPanel.classList.toggle('expand');
-    // explorePanel.classList.toggle('hide');
-});
+if (attributionButton !== null && attributionPanel !== null ) {
+
+    attributionButton.addEventListener('click', (event) => {
+        attributionButton.classList.toggle('selected');
+        attributionPanel.classList.toggle('expand');
+        // explorePanel.classList.toggle('hide');
+    });
+
+}
