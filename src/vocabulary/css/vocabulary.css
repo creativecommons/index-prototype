@@ -565,6 +565,10 @@ body > article.attention a {
     font-weight: 700;
 }
 
+.default-page main > aside nav ul ul {
+    margin-left: 1em;
+}
+
 .default-page main > aside nav ul li {
     margin-bottom: 1em;
 
@@ -573,7 +577,10 @@ body > article.attention a {
     font-weight: 400;
     font-size: 1.1em;
     line-height: 150%;
+}
 
+.default-page main > aside nav ul ul li {
+    margin-bottom: .8em;
 }
 
 .default-page main > aside nav.filter-menu h2 {
