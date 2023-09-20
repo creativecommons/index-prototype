@@ -84,6 +84,8 @@
 
 .home-narrative .topic-summary figure iframe {
   height: 70%;
+
+  background: black;
 }
 
 .home-narrative .topic-summary .description {
