@@ -576,6 +576,14 @@ body > article.attention a {
 
 }
 
+.default-page main > aside nav ul ul {
+    margin-left: 1em;
+}
+
+.default-page main > aside nav ul ul li {
+    margin-bottom: .8em;
+}
+
 .default-page main > aside nav.filter-menu h2 {
     /* margin-left: .5em; */
 }
@@ -1898,8 +1906,8 @@ main ul, main ol {
     line-height: 150%;
 }
 
-main ol {
-    
+main ul ul, main ol ol {
+    font-size: 1.2rem;
 }
 
 main blockquote {
