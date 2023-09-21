@@ -820,6 +820,41 @@ body > article.attention a {
     margin-left: -10%;
 }
 
+.blog-post main .closing {
+    display: inline-block;
+    /* position: absolute;
+    left: -25%;
+    bottom: -10%; */
+    box-sizing: border-box;
+    /* min-height: 150px; */
+    width: 25%;
+    /* float: left; */
+    /* margin: 2em; */
+    margin-bottom: 2em;
+    padding: 2em;
+    width: 100%;
+  
+    background: var(--vocabulary-brand-color-soft-turquoise);
+    /* color: white; */
+    /* color: var(--vocabulary-brand-color-dark-tomato); */
+  
+  }
+  
+  .blog-post main .closing a {
+    color: var(--vocabulary-brand-color-dark-tomato);
+    --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
+  }
+  
+  .blog-post main .closing p {
+    margin :0;
+  
+    font-family: 'Source Sans Pro';
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
 
 
 
