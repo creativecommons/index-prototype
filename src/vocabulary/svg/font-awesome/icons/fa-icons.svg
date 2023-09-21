@@ -13,18 +13,22 @@
 </defs>
 
 <g id="fa-angle-down">
+    <!--! Font Awesome Free 5.11.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
     <path d="M14.004 20.643l-7.969-7.97a1.4 1.4 0 010-1.986L7.36 9.364a1.4 1.4 0 011.987 0l5.648 5.649 5.649-5.649a1.4 1.4 0 011.986 0l1.324 1.325a1.4 1.4 0 010 1.986l-7.969 7.969c-.539.55-1.43.55-1.98 0z" fill="currentColor"/>
 </g>
 
 <g id="fa-angle-left">
+    <!--! Font Awesome Free 5.11.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
     <path d="M9.377 14.007l7.969-7.969a1.4 1.4 0 011.986 0l1.325 1.324a1.4 1.4 0 010 1.987l-5.643 5.654 5.648 5.648a1.4 1.4 0 010 1.987l-1.324 1.33a1.4 1.4 0 01-1.986 0l-7.969-7.969a1.402 1.402 0 01-.006-1.992z" fill="currentColor"/>
 </g>
 
 <g id="fa-angle-right">
+    <!--! Font Awesome Free 5.11.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
     <path d="M20.657 15.999l-7.969 7.969a1.4 1.4 0 01-1.986 0l-1.324-1.324a1.4 1.4 0 010-1.987l5.648-5.648L9.378 9.36a1.4 1.4 0 010-1.986l1.318-1.336a1.4 1.4 0 011.987 0l7.968 7.969c.557.55.557 1.441.006 1.992z" fill="currentColor"/>
 </g>
 
 <g id="fa-angle-up">
+    <!--! Font Awesome Free 5.11.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
     <path d="M15.996 9.357l7.969 7.97a1.4 1.4 0 010 1.985l-1.324 1.325a1.4 1.4 0 01-1.987 0L15 14.994l-5.648 5.649a1.4 1.4 0 01-1.987 0l-1.33-1.325a1.4 1.4 0 010-1.986l7.969-7.969a1.402 1.402 0 011.992-.006z" fill="currentColor"/>
 </g>
 
