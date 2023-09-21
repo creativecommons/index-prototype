@@ -1634,6 +1634,15 @@ main nav.pagination ol li.current a {
     font-size: 1.9em;
 }
 
+.person-page main > header .pronouns {
+    grid-column-start: 2;
+    margin-bottom: 1em;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
 .person-page main > header figure {
     box-sizing: border-box;
     position: absolute;
@@ -2622,15 +2631,6 @@ body > footer .license svg {
         position: relative;
 
         order: -1;
-    }
-
-    .person-page main > header .pronouns {
-        grid-column-start: 2;
-        margin-bottom: 1em;
-        font-family: 'Source Sans Pro';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 1.5em;
     }
 
     nav.pagination {
