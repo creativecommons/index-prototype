@@ -1358,6 +1358,8 @@ body > article.attention a {
 .authored-posts article header {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: baseline;
     width: 100%;
 }
 
@@ -1373,6 +1375,10 @@ body > article.attention a {
     font-size: 2.1em;
     text-transform: none;
     text-transform: initial;
+}
+
+.authored-posts.highlight article .byline {
+    margin-bottom: 2em;
 }
 
 .authored-posts article .categories {
@@ -1439,6 +1445,15 @@ body > article.attention a {
     text-transform: none;
     text-decoration: none;
     text-shadow: none;
+}
+
+main .authored-posts.highlight article {
+    gap: 0 2em;
+    align-content: flex-start;
+}
+
+.authored-posts.highlight figure {
+    margin-bottom: 2em;
 }
 
 nav.pagination {
@@ -1565,6 +1580,14 @@ main nav.pagination ol li.current a {
 
 .team-index main .persons .person p {
     font-size: .75em;
+}
+
+.team-index main .closing {
+    grid-column: span 3;
+}
+
+.team-index main .closing p {
+    font-style: italic;
 }
 
 .person-page main > header {
@@ -1778,6 +1801,8 @@ main > header .byline {
 }
 
 main h2 {
+    width: 100%;
+
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 700;
@@ -1930,9 +1955,13 @@ main figure {
 }
 
 main figure .attribution {
-
     display: block;
     margin-top: 1em;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
 }
 
 /* main figure:nth-of-type(even):has(img) {
@@ -2092,6 +2121,11 @@ main article.related-posts .authored-posts.highlight {
 
 main article.related-posts .authored-posts.highlight article {
     margin-bottom: 3em;
+}
+
+main article.related-posts .authored-posts.highlight article header {
+    flex-direction: column;
+    align-items: baseline;
 }
 
 main article.related-posts .authored-posts.highlight article figure {
@@ -2573,6 +2607,15 @@ body > footer .license svg {
         position: relative;
 
         order: -1;
+    }
+
+    .person-page main > header .pronouns {
+        grid-column-start: 2;
+        margin-bottom: 1em;
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5em;
     }
 
     nav.pagination {

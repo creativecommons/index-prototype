@@ -112,7 +112,7 @@
 
 .home-narrative .case-studies {
   padding: 0 5%;
-  padding-top: 6em;
+  padding-top: 3.5em;
   position: relative;
 
   color: white;
@@ -371,7 +371,7 @@
   font-size: 2.1em;
 }
 
-.home-narrative  h2 {
+.home-narrative >  h2 {
   margin-top: 0;
   font-size: 2.4em;
 }
