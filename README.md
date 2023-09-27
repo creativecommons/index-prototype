@@ -44,6 +44,14 @@ Dedication][cc-zero].
 [cc-zero]: https://creativecommons.org/publicdomain/zero/1.0/ "Creative Commons — CC0 1.0 Universal"
 
 
+### Normalize.css
+
+[`normalize.css`][norm-css] is licensed under the Expat/[MIT][mit] License.
+
+[norm-ccss]: src/vocabulary/css/vendor/normalize.css
+[mit]: https://opensource.org/license/mit/
+
+
 ### Fonts
 
 
