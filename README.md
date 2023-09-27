@@ -46,9 +46,9 @@ Dedication][cc-zero].
 
 ### Normalize.css
 
-[`normalize.css`][norm-css] is licensed under the Expat/[MIT][mit] License.
+[`normalize.css`](src/vocabulary/css/vendor/normalize.css) is licensed under
+the Expat/[MIT][mit] License.
 
-[norm-ccss]: src/vocabulary/css/vendor/normalize.css
 [mit]: https://opensource.org/license/mit/
 
 
