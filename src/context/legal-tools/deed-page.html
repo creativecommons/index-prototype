@@ -110,15 +110,20 @@
         /* 
         we need these styles, not yet added to vocabulary.css, 
         can be added to any lcoal styling in the legal-tools at 
-        current. 
+        current.
+        
+        DO NOT leave these style rules inline within <style> tags, they are
+        here merely to demonstrate use. They need to be added to an
+        included .css file where relevant.
         */
-        .notes {
+
+        .deed-page .notes {
             padding-top: 1em;
 
             border-top: 2px solid black;
         }
 
-        .notes ul {
+        .deed-page .notes ul {
             margin: 0;
             padding: 0;
 
@@ -126,14 +131,14 @@
             font-size: 1rem;
         }
 
-        .notes .icon-replace.fa-angle-up {
+        .deed-page .notes .icon-replace.fa-angle-up {
             --icon-sprite: var(--fa-angle-up);
             --icon-sprite-color: var(--vocabulary-brand-color-dark-tomato);
 
             position: relative;
         }
 
-        .notes ul li a span {
+        .deed-page .notes ul li a span {
             display: inline-block;
 
             text-indent: -3000px;
@@ -152,8 +157,7 @@
         </li>
 
         <li>
-            <article id="ref2" class="note">
-                 
+            <article id="ref2" class="note">   
                 <p> <a href="#src2"><span class="icon-replace fa-angle-up"></span><span>return to top</span></a> <strong>indicate if changes were made:</strong> explaination would go here about it.</p>
             </article>
         </li>
