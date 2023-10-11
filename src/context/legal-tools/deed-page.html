@@ -82,9 +82,9 @@
 
 </header>
 
-<article class="attention">
+<!-- <article class="attention">
     <p>Join us in <a href="#">celebrating 100 years of the Commons</a> this Fall.</p>
-</article>
+</article> -->
 
 <main>
 
@@ -106,22 +106,8 @@
 
 <footer>
     <style>
-        .icon-replace.fa-angle-up {
-            --icon-sprite: var(--fa-angle-up);
-            position: relative;
-        }
 
-        .icon-replace.fa-angle-up:before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-
-            border-bottom: 1px dotted black;
-        }
-
+        /* we need these styles, not yet added to vocabulary.css */
         .notes {
             padding-top: 1em;
 
@@ -136,8 +122,17 @@
             font-size: 1rem;
         }
 
-        .notes ul li a {
-            border-bottom: 1px solid black;
+        .notes .icon-replace.fa-angle-up {
+            --icon-sprite: var(--fa-angle-up);
+            --icon-sprite-color: var(--vocabulary-brand-color-dark-tomato);
+
+            position: relative;
+        }
+
+        .notes ul li a span {
+            display: inline-block;
+            
+            text-indent: -3000px;
         }
 
     </style>
@@ -148,14 +143,14 @@
     <ul>
         <li>
             <article id="ref1" class="note">
-                <p><a href="#src1" class="icon-replace fa-angle-up">return to top</a> <strong>appropriate credit:</strong> explaination would go here about it.</p>
+                <p><a href="#src1"><span class="icon-replace fa-angle-up"></span><span>return to top</span></a> <strong>appropriate credit:</strong> explaination would go here about it. To find out more, you can <a href="https://wikipedia.org">visit wikipedia</a>.</p>
             </article>
         </li>
 
         <li>
             <article id="ref2" class="note">
                  
-                <p> <a href="#src2" class="icon-replace fa-angle-up">return to top</a> <strong>appropriate credit:</strong> explaination would go here about it.</p>
+                <p> <a href="#src2"><span class="icon-replace fa-angle-up"></span><span>return to top</span></a> <strong>indicate if changes were made:</strong> explaination would go here about it.</p>
             </article>
         </li>
     </ul>
