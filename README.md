@@ -1,14 +1,11 @@
-# creativecommons.org-prototype
+# index-prototype
 
-## WIP
-
-🚧 **Notice 2022.03.08**: This repository is currently unstable and in
-development. Most current work is done via PR now, and minimally via direct commits to the `main` branch. It is currently accepting corrective PRs, and moving towards accepting feature/functionality PRs.
+`index` is the project name for the main CreativeCommons.org website.
 
 
 ## Overview
 
-This is the UX frontend prototyping repository for the new creativecommons.org
+This is the UX frontend prototyping repository for the new CreativeCommons.org
 website build, inspired by the Vocabulary design system.
 
 
@@ -18,7 +15,7 @@ website build, inspired by the Vocabulary design system.
   alternative to CSS resets
 
 
-## License
+## Copyright and trademarks
 
 
 ### CC Badge, Icons, Images, and Logos
@@ -36,9 +33,23 @@ website build, inspired by the Vocabulary design system.
 
 ### Code
 
-[`LICENSE`](LICENSE): The code is licensed under the Expat/[MIT][mit] License.
+[![CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+button][cc-zero-png]][cc-zero]
 
-[mit]: http://www.opensource.org/licenses/MIT "The MIT License | Open Source Initiative"
+[`COPYING`](COPYING): All the code within this repository is dedicated to
+the public domain under the [CC0 1.0 Universal (CC0 1.0) Public Domain
+Dedication][cc-zero].
+
+[cc-zero-png]: https://licensebuttons.net/l/zero/1.0/88x31.png "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication button"
+[cc-zero]: https://creativecommons.org/publicdomain/zero/1.0/ "Creative Commons — CC0 1.0 Universal"
+
+
+### Normalize.css
+
+[`normalize.css`](src/vocabulary/css/vendor/normalize.css) is licensed under
+the Expat/[MIT][mit] License.
+
+[mit]: https://opensource.org/license/mit/
 
 
 ### Fonts
@@ -73,8 +84,8 @@ the [Apache License, Version 2.0][apache20].
 
 #### Source Sans Pro
 
-[Source Sans Pro][sourcesanspro] by Paul D. Hunt is licensed under the [Open Font
-License][oflsil].
+[Source Sans Pro][sourcesanspro] by Paul D. Hunt is licensed under the [Open
+Font License][oflsil].
 
 [sourcesanspro]: https://fonts.adobe.com/fonts/source-sans
 [oflsil]: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
