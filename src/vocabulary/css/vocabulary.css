@@ -2569,10 +2569,7 @@ body > footer .license svg {
       width: 1500px;
       margin: 0 auto;
     }
-  
-    .home-narrative .data-points .data-point.khan-academy h2 {
-      text-indent: -6000px;
-    }
+
   }
 
 @media (max-width: 1140px) {
@@ -2582,10 +2579,6 @@ body > footer .license svg {
 }
 
 @media (max-width: 900px) {
-
-    .home-narrative .authored-posts.highlight h2 {
-        margin-top: 1em;
-      }
 
     .blog-index main .authored-posts.highlight {
         display: flex;
@@ -2665,10 +2658,6 @@ body > footer .license svg {
     main article.related-posts .authored-posts.highlight {
         display: block;
     }
-
-    .home-narrative main .authored-posts article {
-        margin-bottom: 2em;
-      }
 
     .blog-index main .authored-posts.highlight:nth-of-type(1) > article:nth-child(1) {
         padding: 2em;
@@ -2782,22 +2771,6 @@ body > footer .license svg {
 }
 
 @media (max-width: 425px) {
-
-    .home-narrative main .authored-posts.highlight > article:nth-of-type(1) {
-      padding: 1.2em;
-    }
-  
-    .home-narrative .attribution-list {
-      padding: 2em;
-    }
-  
-    .home-narrative .attribution-list h2 {
-      width: 50%;
-      font-size: .5em;
-      hyphens: auto;
-      word-break: break-word;
-  
-    }
   
     .blog-index .attribution-list {
       padding: 2em;
