@@ -530,6 +530,8 @@ body > .attention a:before {
   }
 
 .default-page main > header {
+    padding: 3.7em 0;
+
     justify-content: left;
     text-align: left;
 }
@@ -559,14 +561,13 @@ body > .attention a:before {
 }
 
 .default-page main > header h1 {
-    margin-bottom: 0;
-
+    margin: 0;
 }
 
 .default-page main > header p {
     /* margin-top: 0;
     margin-bottom: 0; */
-
+    margin-bottom: .3em;
 }
 
 .default-page main > aside {
@@ -610,11 +611,12 @@ body > .attention a:before {
     text-indent: none;
 
     list-style: none;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 700;
 }
 
 .default-page main > aside nav ul ul {
+    margin-top: .8em;
     margin-left: 1em;
 }
 
@@ -1069,7 +1071,7 @@ body > .attention a:before {
 }
 
 .blog-index .attribution-list h2 {
-    margin-top: 0;
+    margin: 0;
 }
 
 .blog-index .attribution-list button.expand-attribution {
@@ -1097,6 +1099,7 @@ body > .attention a:before {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0;
+    margin-top: 2em;
     padding: 0;
     gap: 2em;
 
@@ -1627,6 +1630,7 @@ main nav.pagination ol li.current a {
 }
 
 .team-index main .persons .person h3 {
+    width: 100%;
     margin-top: .6em;
     margin-bottom: .5em;
 
@@ -1655,6 +1659,7 @@ main nav.pagination ol li.current a {
 
 .team-index main .persons .person img {
     width: 100%;
+    zoom: 10;
 }
 
 
@@ -1690,6 +1695,7 @@ main nav.pagination ol li.current a {
 }
 
 .person-page main > header {
+    min-height: 410px;
     position: relative;
     box-sizing: border-box;
     display: grid;
@@ -2279,8 +2285,7 @@ body > footer {
     "contact subscribe subscribe donate"
     "contact license license donate";
     gap: 40px;
-    padding: 20px var(--vocabulary-page-edges-space);
-    padding-bottom: 40px;
+    padding: 40px var(--vocabulary-page-edges-space);
 
     font-family: 'Source Sans Pro';
     font-style: normal;
