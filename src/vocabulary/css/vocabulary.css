@@ -466,6 +466,7 @@ body > article.attention {
     font-weight: 400;
     font-size: 1.2em;
     line-height: 150%;
+    text-align: center;
     border-bottom: 3px solid white;
 }
 
@@ -476,9 +477,57 @@ body > article.attention:nth-of-type(2) {
 }
 
 body > article.attention a {
-    color: var(--vocabulary-brand-color-dark-green);
-    --underline-background-color: var(--vocabulary-brand-color-soft-green);
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5em .8em;
+    margin-left: .5em;
+
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: middle;
+    background: var(--vocabulary-brand-color-turquoise);
+    color: white;
+    border-radius: 4px;
 }
+
+body > .attention a:before {
+    --icon-sprite: url('vocabulary/svg/cc/icons/cc-icons.svg#cc-heart-filled');
+    --icon-sprite-color: white;
+    --icon-sprite-size: 1em;
+  
+    display: inline-block;
+    content: '';
+    height: 1em;
+    width: 1em;
+    margin-right: .2em;
+  
+    font-size: var(--icon-sprite-size);
+    background-color: var(--icon-sprite-color);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: var(--icon-sprite);
+    mask-image: var(--icon-sprite);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+  }
+  
+  body > .attention.low-importance {
+    background: var(--vocabulary-brand-color-soft-green);
+    border-bottom: 8px solid var(--vocabulary-brand-color-green);
+  }
+  
+  body > .attention.medium-importance {
+    background: var(--vocabulary-brand-color-soft-gold);
+    border-bottom: 8px solid var(--vocabulary-brand-color-gold);
+  }
+  
+  body > .attention.high-importance {
+    background: var(--vocabulary-brand-color-soft-tomato);
+    border-bottom: 8px solid var(--vocabulary-brand-color-tomato);
+  }
 
 .default-page main > header {
     justify-content: left;
