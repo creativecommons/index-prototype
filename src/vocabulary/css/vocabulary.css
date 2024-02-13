@@ -1964,7 +1964,6 @@ main .series p {
     line-height: 150%;
 }
 
-
 main a {
      /* better hyperlink underline typesetting inspired by Tufte CSS */
      --underline-color: var(--vocabulary-brand-color-dark-tomato);
@@ -1994,6 +1993,9 @@ main p {
     line-height: 150%;
 }
 
+main p:has(img) {
+    overflow: hidden;
+  }
 
 main ul, main ol {
     margin: 0 0 2em 1em;
