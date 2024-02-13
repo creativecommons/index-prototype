@@ -2564,6 +2564,16 @@ body > footer .license svg {
     grid-area: button;
 }
 
+@media (min-width: 1500px) {
+    body {
+      width: 1500px;
+      margin: 0 auto;
+    }
+  
+    .home-narrative .data-points .data-point.khan-academy h2 {
+      text-indent: -6000px;
+    }
+  }
 
 @media (max-width: 1140px) {
     .blog-index main footer .attribution-list ul.expand {
@@ -2572,6 +2582,10 @@ body > footer .license svg {
 }
 
 @media (max-width: 900px) {
+
+    .home-narrative .authored-posts.highlight h2 {
+        margin-top: 1em;
+      }
 
     .blog-index main .authored-posts.highlight {
         display: flex;
@@ -2652,6 +2666,18 @@ body > footer .license svg {
         display: block;
     }
 
+    .home-narrative main .authored-posts article {
+        margin-bottom: 2em;
+      }
+
+    .blog-index main .authored-posts.highlight:nth-of-type(1) > article:nth-child(1) {
+        padding: 2em;
+    }
+
+    .blog-index main .authored-posts.highlight {
+        padding: 0 5%;
+    }
+
     .blog-index main footer .attribution-list ul.expand {
         display: block;
     }
@@ -2667,6 +2693,10 @@ body > footer .license svg {
 
     .program-index main > article.projects ul li {
         margin-bottom: 2em;
+    }
+
+    .search-index .search-form form button {
+        width: 20%;
     }
 
 }
@@ -2750,6 +2780,37 @@ body > footer .license svg {
         display: block;
     }
 }
+
+@media (max-width: 425px) {
+
+    .home-narrative main .authored-posts.highlight > article:nth-of-type(1) {
+      padding: 1.2em;
+    }
+  
+    .home-narrative .attribution-list {
+      padding: 2em;
+    }
+  
+    .home-narrative .attribution-list h2 {
+      width: 50%;
+      font-size: .5em;
+      hyphens: auto;
+      word-break: break-word;
+  
+    }
+  
+    .blog-index .attribution-list {
+      padding: 2em;
+    }
+  
+    .blog-index .attribution-list h2 {
+      width: 50%;
+      hyphens: auto;
+      word-break: break-word;
+  
+    }
+  
+  }
 
 @media (max-width:400px) {
 
