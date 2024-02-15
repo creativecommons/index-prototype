@@ -477,6 +477,11 @@ body > article.attention:nth-of-type(2) {
 }
 
 body > article.attention a {
+    color: var(--vocabulary-brand-color-dark-green);
+    --underline-background-color: var(--vocabulary-brand-color-soft-green);
+}
+
+body > article.attention.low-importance a, body > article.attention.medium-importance a, body > article.attention.high-importance a {
     display: inline-flex;
     align-items: center;
     padding: 0.5em .8em;
@@ -493,7 +498,7 @@ body > article.attention a {
     border-radius: 4px;
 }
 
-body > .attention a:before {
+body > article.attention.low-importance:before, body > article.attention.medium-importance:before, body > article.attention.high-importance:before {
     --icon-sprite: url('vocabulary/svg/cc/icons/cc-icons.svg#cc-heart-filled');
     --icon-sprite-color: white;
     --icon-sprite-size: 1em;
