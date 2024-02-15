@@ -499,7 +499,7 @@ body > article.attention.low-importance a, body > article.attention.medium-impor
 }
 
 body > article.attention.low-importance a:before, body > article.attention.medium-importance a:before, body > article.attention.high-importance a:before {
-    --icon-sprite: url('vocabulary/svg/cc/icons/cc-icons.svg#cc-heart-filled');
+    --icon-sprite: var(--cc-heart-filled);
     --icon-sprite-color: white;
     --icon-sprite-size: 1em;
   
