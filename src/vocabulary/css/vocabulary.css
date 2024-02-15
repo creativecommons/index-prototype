@@ -498,7 +498,7 @@ body > article.attention.low-importance a, body > article.attention.medium-impor
     border-radius: 4px;
 }
 
-body > article.attention.low-importance:before, body > article.attention.medium-importance:before, body > article.attention.high-importance:before {
+body > article.attention.low-importance a:before, body > article.attention.medium-importance a:before, body > article.attention.high-importance a:before {
     --icon-sprite: url('vocabulary/svg/cc/icons/cc-icons.svg#cc-heart-filled');
     --icon-sprite-color: white;
     --icon-sprite-size: 1em;
