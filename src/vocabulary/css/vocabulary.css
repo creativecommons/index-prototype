@@ -534,17 +534,6 @@ body > article.attention.low-importance a:before, body > article.attention.mediu
     border-bottom: 8px solid var(--vocabulary-brand-color-tomato);
   }
 
-.default-page main > header {
-    padding: 3.7em 0;
-
-    justify-content: left;
-    text-align: left;
-}
-
-.default-page main > header:before {
-    left: -5.5%;
-}
-
 .default-page main {
     width: 90%;
     box-sizing: border-box;
@@ -558,11 +547,17 @@ body > article.attention.low-importance a:before, body > article.attention.mediu
 
 }
 
+.default-page main > header:before {
+    left: -5.5%;
+}
+
 .default-page main > header {
     display: block;
     grid-area: header;
-    padding-top: 1em;
+    padding: 3.7em 0;
 
+    justify-content: left;
+    text-align: left;
 }
 
 .default-page main > header h1 {
