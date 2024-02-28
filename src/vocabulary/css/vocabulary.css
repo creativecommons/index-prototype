@@ -86,6 +86,12 @@ body > header {
     margin: 0;
 }
 
+/* allows the child identity-logo element to have a focus state */
+.identity-logo-wrapper {
+    height: 50px;
+    width: 191px;
+}
+
 .masthead .identity-logo {
     display: inline-block;
     text-indent: -1000px;
@@ -108,7 +114,6 @@ body > header {
 
 .masthead .identity-logo:hover {
     background-color: var(--vocabulary-neutral-color-dark-gray);
-
 }
 
 /* TODO: needs focus outline to be fixed */
