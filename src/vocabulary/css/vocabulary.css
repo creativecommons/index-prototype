@@ -90,6 +90,8 @@ body > header {
 .identity-logo-wrapper {
     height: 50px;
     width: 191px;
+    display: block;
+    position: absolute;
 }
 
 .masthead .identity-logo {
