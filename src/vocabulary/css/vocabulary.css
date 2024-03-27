@@ -502,13 +502,13 @@ body > article.attention.low-importance a:before, body > article.attention.mediu
     --icon-sprite: var(--cc-heart-filled);
     --icon-sprite-color: white;
     --icon-sprite-size: 1em;
-  
+
     display: inline-block;
     content: '';
     height: 1em;
     width: 1em;
     margin-right: .2em;
-  
+
     font-size: var(--icon-sprite-size);
     background-color: var(--icon-sprite-color);
     -webkit-mask-repeat: no-repeat;
@@ -518,17 +518,17 @@ body > article.attention.low-importance a:before, body > article.attention.mediu
     -webkit-mask-size: contain;
     mask-size: contain;
   }
-  
+
   body > .attention.low-importance {
     background: var(--vocabulary-brand-color-soft-green);
     border-bottom: 8px solid var(--vocabulary-brand-color-green);
   }
-  
+
   body > .attention.medium-importance {
     background: var(--vocabulary-brand-color-soft-gold);
     border-bottom: 8px solid var(--vocabulary-brand-color-gold);
   }
-  
+
   body > .attention.high-importance {
     background: var(--vocabulary-brand-color-soft-tomato);
     border-bottom: 8px solid var(--vocabulary-brand-color-tomato);
@@ -884,21 +884,21 @@ body > article.attention.low-importance a:before, body > article.attention.mediu
     margin-bottom: 2em;
     padding: 2em;
     width: 100%;
-  
+
     background: var(--vocabulary-brand-color-soft-turquoise);
     /* color: white; */
     /* color: var(--vocabulary-brand-color-dark-tomato); */
-  
+
   }
-  
+
   .blog-post main .closing a {
     color: var(--vocabulary-brand-color-dark-tomato);
     --underline-background-color: var(--vocabulary-brand-color-soft-turquoise);
   }
-  
+
   .blog-post main .closing p {
     margin :0;
-  
+
     font-family: 'Source Sans Pro';
     font-size: 1.2em;
     font-style: normal;
@@ -2771,18 +2771,18 @@ body > footer .license svg {
 }
 
 @media (max-width: 425px) {
-  
+
     .blog-index .attribution-list {
       padding: 2em;
     }
-  
+
     .blog-index .attribution-list h2 {
       width: 50%;
       hyphens: auto;
       word-break: break-word;
-  
+
     }
-  
+
   }
 
 @media (max-width:400px) {
