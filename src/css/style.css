@@ -190,7 +190,7 @@
 }
 
 .home-narrative .data-points .data-point.wikipedia h2 {
-  text-indent: -9000px;
+  text-indent: -10000px;
   min-height: 150px;
   background: center center no-repeat;
   background-size: contain;
@@ -199,7 +199,7 @@
 }
 
 .home-narrative .data-points .data-point.the-met h2 {
-  text-indent: -9000px;
+  text-indent: -10000px;
   min-height: 150px;
   background: center center no-repeat;
   background-size: contain;
@@ -210,7 +210,7 @@
 }
 
 .home-narrative .data-points .data-point.khan-academy h2 {
-  text-indent: -9000px;
+  text-indent: -10000px;
   min-height: 150px;
   width: 90%;
   background: center center no-repeat;
