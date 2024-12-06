@@ -22,6 +22,7 @@ if(menuButton !== null && menuPanel !== null) {
 }
 
 
+
 const attributionButton = document.querySelector('button.expand-attribution');
 const attributionPanel = document.querySelector('.attribution-panel');
 
