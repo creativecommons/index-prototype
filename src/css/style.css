@@ -549,3 +549,43 @@ main .content figure:has(img.alignright), .blog-post main figure:has(img.alignri
   width: 40%;
   float: right;
 }
+
+@media (max-width:400px) {
+
+  div[id^="attachment_"].alignleft {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+
+  div[id^="attachment_"].alignright {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+
+  main .content div[id^="attachment_"].alignleft {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  
+  main .content div[id^="attachment_"].alignright {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+
+  main .content figure:has(img.alignleft), .blog-post main figure:has(img.alignleft) {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+
+  main .content figure:has(img.alignright), .blog-post main figure:has(img.alignright) {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+
+}
