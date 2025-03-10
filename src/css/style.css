@@ -363,11 +363,10 @@
 
 /* faq-index context */
 
-.faq-index main > header { /* generalize? */
+/* .faq-index main > header {
   display: block;
   padding: 3.7em 0;
-  /* text-align: left; */
-}
+} */
 
 .faq-index .search-form form {
   display: flex;
@@ -422,6 +421,10 @@
   
   display: grid;
   grid-template-columns: subgrid;
+}
+
+.faq-index .toc > h2 {
+  grid-column: 3 / span 3;
 }
 
 .faq-index .toc > ul {
