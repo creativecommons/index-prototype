@@ -361,6 +361,50 @@
   border: 2px solid var(--vocabulary-neutral-color-dark-gray);
 }
 
+.course-index > header {
+  display: none;
+}
+
+.course-index > footer {
+  /* display: none; */
+}
+
+.course-page > header {
+  display: none;
+}
+
+.course-page > footer {
+  /* display: none; */
+}
+
+.course-embedded > header {
+  display: none;
+}
+
+.course-embedded > footer {
+  display: none;
+}
+
+.course-embedded nav.breadcrumbs ul, .course-page nav.breadcrumbs ul, .course-index nav.breadcrumbs ul {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+
+  list-style: none;
+  text-align: left;
+  font-size: .9em;
+}
+
+.course-embedded nav.breadcrumbs ul li:after, .course-page nav.breadcrumbs ul li:after, .course-index nav.breadcrumbs ul li:after { 
+  content: '>';
+  padding: 0 .5em;
+}
+
+.course-embedded nav.breadcrumbs ul li:last-child:after, .course-page nav.breadcrumbs ul li:last-child:after, .course-index nav.breadcrumbs ul li:last-child:after { 
+  display: none;
+}
+
+
 
 
 @media (min-width: 1500px) {
