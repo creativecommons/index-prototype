@@ -503,6 +503,10 @@
     width: 100%;
   }
 
+  .faq-index .toc article.featured > ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
 }
 
 @media (max-width: 705px) {
@@ -525,8 +529,6 @@
    }
 }
 
-}
-
 @media (max-width:480px) {
   .home-narrative .case-studies > ul {
     display: block;
@@ -534,6 +536,10 @@
 
   .home-narrative .case-studies > ul li {
     margin-bottom: 3em;
+  }
+
+  .faq-index .toc article.featured > ul {
+    display: block;
   }
 }
 
