@@ -462,6 +462,47 @@
   font-size: 1.4em;
 }
 
+.faq-index details {
+  margin-bottom: 2em;
+  
+  border: 2px solid var(--vocabulary-neutral-color-lighter-gray);
+  border-radius: 5px;
+}
+
+.faq-index details:open summary {
+  margin-bottom: 1em;
+}
+
+.faq-index summary {
+  padding: .2em .5em;
+
+  background: var(--vocabulary-neutral-color-lighter-gray);
+  
+  font-size: 1.2em;
+}
+
+.faq-index summary:hover {
+  cursor: pointer;
+}
+
+.faq-index summary::marker {
+  font-size: .8em;
+}
+
+
+.faq-index details ul {
+  margin-left: 2em;
+}
+
+.faq-index details ul li {
+  line-height: 1.8;
+}
+
+.faq-index main p {
+  margin-top: 0;
+}
+
+
 
 
 @media (min-width: 1500px) {
