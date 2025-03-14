@@ -440,6 +440,7 @@
   grid-column: 1 / span 7;
   padding: 3em 4em;
   margin-bottom: 4em;
+  z-index: 1000;
 
   background: var(--vocabulary-neutral-color-lighter-gray);
 }
@@ -502,8 +503,49 @@
   margin-top: 0;
 }
 
+.faq-index footer {
+  z-index: 1000;
+}
 
 
+.return-to-top {
+  display: inline-block;
+  position: absolute;
+  top: 90%;
+  right: 5%;
+  height: 300%;
+  width: 100px;
+
+  font-family: 'Source Sans Pro';
+}
+
+.return-to-top span {
+  position: fixed;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--vocabulary-brand-color-dark-tomato);
+}
+
+.return-to-top span:before {
+  content: '';
+  position: absolute;
+  left: 32%;
+  top: -1em;
+
+  font-size: 2em;
+}
+
+.return-to-top:after {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  display: block;
+  content: '';
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+
+  background: white;
+}
 
 @media (min-width: 1500px) {
   .home-narrative .data-points .data-point.khan-academy h2 {
