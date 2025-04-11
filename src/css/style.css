@@ -418,7 +418,7 @@
 
 .faq-index main > .content > .toc {
   grid-column: 3 / span 7;
-  
+
   display: grid;
   grid-template-columns: subgrid;
 }
@@ -429,7 +429,7 @@
 
 .faq-index .toc > ul {
   grid-column: 3 / span 3;
-  
+
 }
 
 .faq-index .toc > ul li {
@@ -463,50 +463,75 @@
   font-size: 1.4em;
 }
 
-.faq-index details {
+.faq-index .toc article.featured  p {
+  font-size: 1.2em;
+}
+
+.faq-index .toc ul.frequent-questions {
+  font-size: 1em;
+}
+
+
+.faq-index .edit {
+  display: inline-block;
+  width: initial;
+  /* position: absolute; */
+  /* top: 0; */
+  /* right: 0; */
+}
+
+.faq-index details, .faq-page details {
   margin-bottom: 2em;
-  
+
   border: 2px solid var(--vocabulary-neutral-color-lighter-gray);
   border-radius: 5px;
 }
 
-.faq-index details:open summary {
+.faq-index details:open summary, .faq-page details:open summary {
   margin-bottom: 1em;
 }
 
-.faq-index summary {
+.faq-index summary, .faq-page summary {
   padding: .2em .5em;
 
   background: var(--vocabulary-neutral-color-lighter-gray);
-  
+
   font-size: 1.2em;
 }
 
-.faq-index summary:hover {
+.faq-index summary:hover, .faq-page summary:hover {
   cursor: pointer;
 }
 
-.faq-index summary::marker {
+.faq-index summary::marker, .faq-page summary::marker {
   font-size: .8em;
 }
 
 
-.faq-index details ul {
+.faq-index details ul, .faq-page details ul {
   margin-left: 2em;
 }
 
-.faq-index details ul li {
+.faq-index details ul li, .faq-page details ul li {
   line-height: 1.8;
 }
 
-.faq-index main p {
+.faq-index main .content > h4, .faq-page main .content > h4 {
+  font-family: 'Roboto Condensed';
+  font-size: 1.4em;
+}
+
+.faq-index main p, .faq-page main p {
   margin-top: 0;
 }
 
-.faq-index footer {
+.faq-index footer, .faq-page footer {
   z-index: 1000;
 }
 
+.faq-page .breadcrumbs {
+  font-family: 'Source Sans Pro';
+}
 
 .return-to-top {
   display: inline-block;
@@ -545,6 +570,86 @@
   z-index: 500;
 
   background: white;
+}
+
+/* course-index, course-page contexts */
+.course-index > header {
+  display: none;
+}
+
+.course-index > footer {
+  /* display: none; */
+}
+
+.course-page > header {
+  display: none;
+}
+
+.course-page > footer {
+  /* display: none; */
+}
+
+.course-embedded > header {
+  display: none;
+}
+
+.course-embedded > footer {
+  display: none;
+}
+
+.course-embedded nav.breadcrumbs ul, .course-page nav.breadcrumbs ul, .course-index nav.breadcrumbs ul {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+
+  list-style: none;
+  text-align: left;
+  font-size: .9em;
+}
+
+.course-embedded nav.breadcrumbs ul li:after, .course-page nav.breadcrumbs ul li:after, .course-index nav.breadcrumbs ul li:after {
+  content: '>';
+  padding: 0 .5em;
+}
+
+.course-embedded nav.breadcrumbs ul li:last-child:after, .course-page nav.breadcrumbs ul li:last-child:after, .course-index nav.breadcrumbs ul li:last-child:after {
+  display: none;
+}
+
+.course-page details {
+  margin-bottom: 2em;
+
+  font-family: 'Source Sans Pro';
+  border: 2px solid var(--vocabulary-neutral-color-lighter-gray);
+  border-radius: 5px;
+}
+
+.course-page details:open summary {
+  margin-bottom: 1em;
+}
+
+.course-page summary {
+  padding: .2em .5em;
+
+  background: var(--vocabulary-neutral-color-lighter-gray);
+
+  font-size: 1.2em;
+}
+
+.course-page summary:hover {
+  cursor: pointer;
+}
+
+.course-page summary::marker {
+  font-size: .8em;
+}
+
+.course-page details ul {
+  margin-left: 2em;
+}
+
+.course-page details ul li {
+  line-height: 1.8;
 }
 
 @media (min-width: 1500px) {
